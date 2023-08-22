@@ -1,12 +1,12 @@
 import {Box} from '@chakra-ui/react'
-import { NavBar } from './Component/NavBar';
+import Home from './Component/Home';
+
+
+
 
 function App() {
   return (<Box>
-    <NavBar/>
-    <Box mt='80px'>
-      Rajon
-    </Box>
+    <Home/>
   </Box>)
 }
 
