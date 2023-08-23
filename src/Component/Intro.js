@@ -1,14 +1,32 @@
-import { Box, Text, Button, Heading, Flex, Image } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
-import { useContext } from 'react'
-import { ThemeContext } from './ThemeContext'
-import { MdEmail } from 'react-icons/md'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { Box, Text, Button, Flex, Image, Popover, PopoverTrigger, PopoverContent, PopoverBody } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import { useContext } from 'react';
+import { ThemeContext } from './ThemeContext';
+import { MdEmail } from 'react-icons/md';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import imgOlive from './../Banner/rajon.jpg'
 import resume from './../Banner/RAJON_MERN.pdf'
+import {FcSettings} from 'react-icons/fc'
 
 export default function Intro() {
-  const theme = useContext(ThemeContext)
+  const theme = useContext(ThemeContext);
+
+  console.log(theme.handleTheme)
+
+  function handleDark(){
+    theme.handleTheme("dark");
+  }
+  function handleLight(){
+    theme.handleTheme("light");
+  }
+
+  function handleBlue(){
+    theme.handleTheme("blue");
+  }
+
+  function handleGreen(){
+    theme.handleTheme("green");
+  }
 
   const container = {
     hidden: { opacity: 0 },
@@ -17,7 +35,7 @@ export default function Intro() {
       transition: {
         duration: 0.5,
         staggerChildren: 0.2,
-        when: "beforeChildren",
+        when: 'beforeChildren',
       },
     },
   };
@@ -32,41 +50,76 @@ export default function Intro() {
       variants={container}
       initial="hidden"
       animate="visible"
-      style={{ position: "relative" }}
     >
       <Box
         id="home"
         className="about section"
-        background={theme.bg}
+        background={theme && theme.bg}
         p="15px"
-        position="relative"
       >
-        <Box  p='15px' display={{base:'none',sm:'none',md:'block'}} position='fixed' left='0' top='35%' >
-        <motion.div variants={item}>
-          <Flex mt="15px" justify="start">
-            <MdEmail color="#26A69A" size="25px" />
-          </Flex>
-        </motion.div>
-
-        <motion.div variants={item}>
-          <Flex mt="25px">
-            <Box w="10%">
-              <a target="_blank" href="https://www.linkedin.com/in/sumat-mallick-65b966227/">
-                <AiFillLinkedin color="#26A69A" size="25px" />
-              </a>
+      
+        
+        <Popover>
+      <PopoverTrigger>
+      <Box position='fixed' right={{base:'31px',sm:'42px',md:'50px',lg:'4'}} top={{base:'65px',sm:'65px',md:'60px',lg:'3'}}>
+        <FcSettings size='30px' color='#26A69A'/>
+        </Box>
+      </PopoverTrigger>
+      <PopoverContent mr='20px' mt='20px' p={3} w='250px' bg="gray.200" border='1px solid #00796B'>
+        <PopoverBody>
+          <Flex justify='space-between'>
+      {/* light theme  */}
+            <Box border='1px solid #00796B' borderRadius='50%' onClick={handleLight}>
+            <Box  bg='linear-gradient(90deg, rgba(202,198,198,0) 0%, rgba(223,225,224,1) 0%, rgba(70,255,125,0.14066876750700286) 33%, rgba(0,254,255,0.3339460784313726) 79%)' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
             </Box>
-          </Flex>
-        </motion.div>
-
-        <motion.div variants={item}>
-          <Flex mt="25px">
-            <Box w="10%">
-              <a target="_blank" href="https://github.com/SumatM">
-                <AiFillGithub color="#26A69A" size="25px" />
-              </a>
+      {/* dark theme */}
+            <Box border='1px solid #00796B' borderRadius='50%' onClick={handleDark}>
+            <Box  bg='black' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
             </Box>
+        {/* blue theme  */}
+            <Box border='1px solid #08105B' borderRadius='50%' onClick={handleBlue}>
+            <Box  bg='#242582' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
+            </Box>
+      {/* green theme  */}
+            <Box border='1px solid #00796B' borderRadius='50%' onClick={handleGreen}>
+            <Box  bg='#D4A59B' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
+            </Box>
+
+            
+            
           </Flex>
-        </motion.div>
+        </PopoverBody>
+      </PopoverContent>
+      
+    </Popover>
+
+
+        <Box p="15px" display={{ base: 'none', sm: 'none', md: 'block' }} position="fixed" left="0" top="35%">
+          <motion.div variants={item}>
+            <Flex mt="15px" justify="start">
+              <MdEmail color="#26A69A" size="25px" />
+            </Flex>
+          </motion.div>
+
+          <motion.div variants={item}>
+            <Flex mt="25px">
+              <Box w="10%">
+                <a target="_blank" href="https://www.linkedin.com/in/sumat-mallick-65b966227/">
+                  <AiFillLinkedin color="#26A69A" size="25px" />
+                </a>
+              </Box>
+            </Flex>
+          </motion.div>
+
+          <motion.div variants={item}>
+            <Flex mt="25px">
+              <Box w="10%">
+                <a target="_blank" href="https://github.com/SumatM">
+                  <AiFillGithub color="#26A69A" size="25px" />
+                </a>
+              </Box>
+            </Flex>
+          </motion.div>
         </Box>
 
         <Box position="fixed" top={{ base: '65%' }} display="inline">

@@ -44,13 +44,12 @@ export default function GitCalendar() {
   };
 
   return (
-    <Box bg={theme.bg} pt='25px' textAlign='center'>
-         <Box w='80%'  margin="auto" borderTop="1.5px solid #00796B"></Box>
-            <Heading p='25px' color='#00796B' size='2xl'>GitHub</Heading>
-            <Box p='40px 20px' w='97%' m='auto' textAlign='center'>
-            <Flex justify='center'  p='45px' className="react-activity-calendar"  color='#00796B' >
-            
-    <GitHubCalendar style={{width:"100%"}}
+    <Box  pt='25px' textAlign='center'>
+    <Box w='80%'  margin="auto" borderTop="1.5px solid #00796B"></Box>
+       <Heading p='25px' color='#00796B' size='2xl'>GitHub</Heading>
+       <Box p='40px 20px' w='97%' m='auto' textAlign='center'>
+       <Flex justify='center'  p='45px' className="react-activity-calendar"  color='#00796B' >
+       <GitHubCalendar  style={{width:"100%"}}
             username="rajon-git"
             blockSize={20}
             blockMargin={10}
@@ -61,7 +60,7 @@ export default function GitCalendar() {
           />
         </Flex>
         <Flex  mt='40px' flexDirection={{base:'column',sm:'column',md:'column',lg:'row'}} justifyContent='space-around' alignItems='center' gap='25px'>
-               
+                   
            <Box >
           <img display="block" id="github-stats-card" src={`https://github-readme-stats.vercel.app/api?username=${githubUsername}`} alt="GitHub Stats" />
           </Box>
