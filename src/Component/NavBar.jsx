@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import {
   Box,
   Flex,
@@ -7,20 +8,19 @@ import {
   DrawerContent,
   DrawerBody,
   useDisclosure,
-  Button
-} from '@chakra-ui/react'
-import { useEffect, useRef, useState} from 'react'
+  Button,
+  Spacer
+} from '@chakra-ui/react';
+import { useRef } from 'react';
 import logo from './Rajon.png'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import resume from './../Banner/RAJON_MERN.pdf'
-import { Navigate,Link } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll';
 
 
 export const NavBar = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const btnRef = useRef()
-
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = useRef();
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
@@ -48,11 +48,12 @@ export const NavBar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
- 
+
 
   return (
     <Box id="nav-menu">
@@ -109,10 +110,7 @@ export const NavBar = () => {
         w="100%"
         display={{ base: 'block', sm: 'block', md: 'block', lg: 'none' }}
       >
-        <Flex w="92%" m="auto" textAlign="center" justify="space-between" align="center" mt="10px">
-          <Box w="25%">
-            <img width="50%" src={logo} alt="Logo" />
-          </Box>
+        <Flex w="92%" m="auto" textAlign="center" justify="right" align="center" mt="10px" >
           <Box mr="10px" ref={btnRef} onClick={onOpen}>
             <HamburgerIcon color="#00796B" fontSize="35px" />
           </Box>
