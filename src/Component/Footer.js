@@ -8,7 +8,7 @@ import {AiFillLinkedin,AiFillGithub} from 'react-icons/ai'
 export default function Footer(){
 
     return (
-        <Box textAlign='center'  p='20px' bg="#2F2FA1" mb='200px' id='contact'>
+        <Box textAlign='center'  p='20px' bg="#2F2FA1"  id='contact'>
 {/*------- footer containter=------ */}
             <Box p='40px 20px' w='97%' m='auto' textAlign='center' borderTop='1px solid #FF9398'>
                 <Box >
@@ -23,7 +23,7 @@ export default function Footer(){
                     </motion.div>
                     <motion.div whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }} >
-                         <Text fontSize='sm' color='#FF9398' fontWeight='500' letterSpacing='0.8px'>MD. Rajon Ahamad</Text>
+                         <Text fontSize='sm' color='#FF9398' fontWeight='500' letterSpacing='0.8px'>Sumat Mallick</Text>
                     </motion.div>
                     </Flex>
                     {/* call */}
@@ -34,7 +34,7 @@ export default function Footer(){
                     </motion.div>
                     <motion.div whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }} >
-                         <Text id="contact-phone" fontSize='sm' color='#FF9398' fontWeight='500' letterSpacing='0.8px'>+880 19900-20467</Text>
+                         <Text id="contact-phone" fontSize='sm' color='#FF9398' fontWeight='500' letterSpacing='0.8px'>+91-8894417615</Text>
                     </motion.div>
                     </Flex>
                     {/* Email */}
@@ -45,7 +45,7 @@ export default function Footer(){
                     </motion.div>
                     <motion.div whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }} >
-                         <a target="_blank" href="mailto: rajon.zhsust15@gmail.com"><Text fontSize='sm' color='#FF9398' fontWeight='500' letterSpacing='0.8px'  id="contact-email">rajon.zhsust15@gmail.com</Text></a>
+                         <a target="_blank" href="mailto: sumatmallick@gmail.com"><Text fontSize='sm' color='#FF9398' fontWeight='500' letterSpacing='0.8px'  id="contact-email">Sumatmallick@gmail.com</Text></a>
                     </motion.div>
                     </Flex>
                     {/* linkedin */}
@@ -59,7 +59,7 @@ export default function Footer(){
                     </Box>
                     <motion.div whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }} >
-                         <a target="_blank"  href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/"><Text  id="contact-linkedin" fontSize='sm' color='#FF9398' fontWeight='500' letterSpacing='0.8px'>Rajon Ahamad</Text></a>
+                         <a target="_blank"  href="https://www.linkedin.com/in/sumat-mallick-65b966227/"><Text  id="contact-linkedin" fontSize='sm' color='#FF9398' fontWeight='500' letterSpacing='0.8px'>Sumat Mallick</Text></a>
                     </motion.div>
                     </Flex>
                     {/* github */}
@@ -73,7 +73,7 @@ export default function Footer(){
                     </Box>
                     <motion.div whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }} >
-                         <a target="_blank"  href="https://github.com/rajon-git"><Text  id="contact-github" fontSize='sm' color='#FF9398' fontWeight='500' letterSpacing='0.8px'>rajon-git</Text></a>
+                         <a target="_blank"  href="https://github.com/SumatM"><Text  id="contact-github" fontSize='sm' color='#FF9398' fontWeight='500' letterSpacing='0.8px'>SumatM</Text></a>
                     </motion.div>
                     </Flex>
                     </Box>
@@ -119,7 +119,6 @@ export default function Footer(){
                        <Button w='80%' background='none' color='white' outline="1px solid #FF9398" 
                         _hover={{background:'#FF9398'}} borderRadius='0px' mt='10px'>Submit</Button>
                        </Box>
-
                     </FormControl>
                      </Box>
                 </Flex>
