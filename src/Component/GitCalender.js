@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Box, Flex, Heading } from '@chakra-ui/react';
 import GitHubCalendar from 'react-github-calendar';
 import explicitTheme from 'react-github-calendar'
+import { ThemeContext } from "./ThemeContext";
 import axios from 'axios';
 
 export default function GitCalendar() {
+  const theme = useContext(ThemeContext);
   const [contributions, setContributions] = useState([]);
   const githubUsername = 'rajon-git';
 
@@ -42,10 +44,10 @@ export default function GitCalendar() {
   };
 
   return (
-    <Box bg="#2F2FA1" pt='25px' textAlign='center'>
-            <Heading p='25px' color='#FF9398' size='2xl'>GitHub</Heading>
+    <Box bg={theme.bg} pt='25px' textAlign='center'>
+            <Heading p='25px' color='#00796B' size='2xl'>GitHub</Heading>
             <Box p='40px 20px' w='97%' m='auto' textAlign='center' borderTop='1px solid #FF9398'>
-            <Box w='95%' m='auto' p='45px' className="react-activity-calendar"  color='white'>
+            <Flex justify='center'  p='45px' className="react-activity-calendar"  color='gray' >
           <GitHubCalendar
             username="rajon-git"
             blockSize={20}
@@ -55,9 +57,9 @@ export default function GitCalendar() {
             hideTotalCount='true'
 
           />
-        </Box>
-        <Flex  mt='40px' flexDirection={{base:'column',sm:'column',md:'column',lg:'row'}} alignItems='center' gap='25px'>
-          <Box>
+        </Flex>
+        <Flex  mt='40px' flexDirection={{base:'column',sm:'column',md:'column',lg:'row'}} justifyContent='space-around' alignItems='center' gap='25px'>
+                <Box >
           <img display="block" id="github-stats-card" src={`https://github-readme-stats.vercel.app/api?username=${githubUsername}`} alt="GitHub Stats" />
           </Box>
           <Box>
@@ -65,7 +67,7 @@ export default function GitCalendar() {
           </Box>
         </Flex>
         <Flex  mt='40px'  justifyContent='center'>
-              <img width='50%' display="block" id="github-top-langs"
+        <img display="block" id="github-top-langs"
             src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${githubUsername}`}
             alt="GitHub Top Languages"
           />
