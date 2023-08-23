@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Flex, Heading } from '@chakra-ui/react';
 import GitHubCalendar from 'react-github-calendar';
+import explicitTheme from 'react-github-calendar'
 import axios from 'axios';
 
 export default function GitCalendar() {
@@ -42,9 +43,9 @@ export default function GitCalendar() {
 
   return (
     <Box bg="#2F2FA1" pt='25px' textAlign='center'>
-      <Heading p='25px' color='#FF9398' size='2xl'>GitHub</Heading>
-      <Box p='40px 20px' w='97%' m='auto' textAlign='center' borderTop='1px solid #FF9398'>
-        <Box w='95%' m='auto' p='45px' className="react-activity-calendar" color='white'>
+            <Heading p='25px' color='#FF9398' size='2xl'>GitHub</Heading>
+            <Box p='40px 20px' w='97%' m='auto' textAlign='center' borderTop='1px solid #FF9398'>
+            <Box w='95%' m='auto' p='45px' className="react-activity-calendar"  color='white'>
           <GitHubCalendar
             username="rajon-git"
             blockSize={20}
@@ -55,22 +56,20 @@ export default function GitCalendar() {
 
           />
         </Box>
-        <Flex mt='40px' justify='space-around'>
+        <Flex  mt='40px' flexDirection={{base:'column',sm:'column',md:'column',lg:'row'}} alignItems='center' gap='25px'>
           <Box>
-            <img id="github-stats-card" src={`https://github-readme-stats.vercel.app/api?username=${githubUsername}`} alt="GitHub Stats" />
+          <img display="block" id="github-stats-card" src={`https://github-readme-stats.vercel.app/api?username=${githubUsername}`} alt="GitHub Stats" />
           </Box>
           <Box>
-            <img id="github-streak-stats" src={`https://github-readme-streak-stats.herokuapp.com?user=${githubUsername}&theme=neon-blurange`} alt="GitHub Streak Stats" />
+          <img style={{display:'block'}} id="github-streak-stats"  src={`https://github-readme-streak-stats.herokuapp.com?user=${githubUsername}&theme=neon-blurange`} alt="GitHub Streak Stats" />
           </Box>
         </Flex>
-        <Box w='30%' m='auto' mt='40px'>
-          <img
-            width='150%'
-            id="github-top-langs"
+        <Flex  mt='40px'  justifyContent='center'>
+              <img width='50%' display="block" id="github-top-langs"
             src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${githubUsername}`}
             alt="GitHub Top Languages"
           />
-        </Box>
+        </Flex>
       </Box>
     </Box>
   );
