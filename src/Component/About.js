@@ -87,7 +87,6 @@ import resume from './../Banner/RAJON_MERN.pdf'
               </Button>
             </Link>
           </Box>
-          ``
         </Flex>
       </Box>
     );
