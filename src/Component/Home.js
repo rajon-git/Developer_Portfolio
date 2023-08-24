@@ -8,6 +8,7 @@ import GitCalender from "./GitCalender";
 import { useContext } from "react";
 import About from "./About";
 import { ThemeContext } from "./ThemeContext";
+import Education from "./Education";
 
 export default function Home() {
   const theme = useContext(ThemeContext);
@@ -17,6 +18,7 @@ export default function Home() {
       <NavBar />
       <Intro />
       <About />
+      <Education/>
       <Skills />
       <Project />
       <GitCalender />

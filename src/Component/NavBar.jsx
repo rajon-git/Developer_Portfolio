@@ -106,6 +106,21 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#4DB6AC" }}
             fontWeight="bolder"
+            color={activeSection === "about" ? "#4DB6AC" : "#00796B"}
+          >
+            <ScrollLink
+              to="education"
+              smooth={true}
+              duration={500}
+              onClick={onClose}
+            >
+              <Text _hover={{cursor:'pointer'}} className="nav-link education">EDUCATION</Text>
+            </ScrollLink>
+          </Box>
+          <Box
+            p="5px 15px"
+            _hover={{ color: "#4DB6AC" }}
+            fontWeight="bolder"
             color={activeSection === "skills" ? "#4DB6AC" : "#00796B"}
           >
             <ScrollLink
@@ -147,34 +162,7 @@ export const NavBar = () => {
               <Text className="nav-link contact" _hover={{cursor:'pointer'}}>CONTACT</Text>
             </ScrollLink>
           </Box>
-          <Box
-            p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
-            fontWeight="bolder"
-            color="#00695C"
-          >
-            <Box className="nav-link resume" >
-              <Link
-                href={resume}
-                target="_blank"
-                download="Sumat-Mallick-Resume"
-                id="resume-link-1"
-                
-              >
-                <Text
-                  className="nav-link contact"
-                  onClick={() =>
-                    window.open(
-                      "https://drive.google.com/file/d/1ni4YYEIFx2EWl7TNt-B8ymbVc5wmK7qt/view?usp=drive_link"
-                    )
-                  }
-                  
-                >
-                  RESUME
-                </Text>
-              </Link>
-            </Box>
-          </Box>
+          
         </Flex>
       </Box>
       <Box
@@ -250,6 +238,22 @@ export const NavBar = () => {
               m="10px 0"
             >
               <ScrollLink
+                to="education"
+                smooth={true}
+                duration={500}
+                onClick={onClose}
+              >
+                <Text>EDUCATION</Text>
+              </ScrollLink>
+            </Box>
+            <Box
+              p="5px 15px"
+              bg="#26A69A"
+              color="white"
+              fontWeight="bolder"
+              m="10px 0"
+            >
+              <ScrollLink
                 to="skills"
                 smooth={true}
                 duration={500}
@@ -290,34 +294,7 @@ export const NavBar = () => {
                 <Text>CONTACT</Text>
               </ScrollLink>
             </Box>
-            <Box
-              p="5px 15px"
-              className="nav-link resume"
-              fontWeight="bolder"
-              color="white"
-            >
-              <a
-                href={resume}
-                download="Sumat-Mallick-Resume"
-              >
-                <Button
-                  background="none"
-                  color="white"
-                  outline="1px solid #00796B"
-                  _hover={{ background: "#26A69A" }}
-                  borderRadius="0px"
-                  mt="10px"
-                  id="resume-button-1"
-                  onClick={() =>
-                    window.open(
-                      "https://drive.google.com/file/d/1ni4YYEIFx2EWl7TNt-B8ymbVc5wmK7qt/view?usp=drive_link"
-                    )
-                  }
-                >
-                  Resume
-                </Button>
-              </a>
-            </Box>
+            
           </DrawerBody>
         </DrawerContent>
       </Drawer>
