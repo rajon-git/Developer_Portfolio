@@ -66,7 +66,7 @@ export default function About() {
           <Link
             href={resume}
             target="_blank"
-            download="Sumat-Mallick-Resume"
+            download="Rajon-Ahamad-Resume"
             id="resume-link-2"
           >
             <Button
@@ -79,7 +79,7 @@ export default function About() {
               id="resume-button-2"
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1ni4YYEIFx2EWl7TNt-B8ymbVc5wmK7qt/view?usp=drive_link"
+                  "https://drive.google.com/file/d/1rBwqvqWOO2JT82jHw-QfALzRaSNxdDeM/view?usp=sharing"
                 )
               }
             >
