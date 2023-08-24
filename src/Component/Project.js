@@ -24,12 +24,12 @@ export default function Project() {
       id="projects"
     >
       {/* bar for decoration  */}
-      <Box w="80%" margin="auto" borderTop="1.5px solid #00796B">
+      <Box w="80%" margin="auto" borderTop="1.5px solid #ff651c">
         {/* box 1 for main projects  */}
       </Box>
       <Box m="auto" textAlign="center">
         <Box pt="55px">
-          <Heading color="#00796B" size="2xl">
+          <Heading color="#ff651c" size="2xl">
             PROJECTS
           </Heading>
         </Box>
@@ -50,14 +50,14 @@ export default function Project() {
                 p="0 20px"
                 textAlign="left"
                 className="project-card"
-                boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px;"
+                boxShadow="0px 3px 6px rgba(255, 101, 28, 0.5)"
                 _hover={{ background: mainTheme.theme.hover }}
               >
                 <Box>
                   <Heading
                     p="15px 0"
                     size="lg"
-                    color="#00796B"
+                    color="#ff651c"
                     className="project-title"
                   >
                     {project.heading}
@@ -71,7 +71,7 @@ export default function Project() {
                   </Link>
                 </Box>
                 <Box p="15px 0">
-                  <Text fontWeight="bold" m="5px 0" color="#00796B">
+                  <Text fontWeight="bold" m="5px 0" color="#ff651c">
                     {project.title}
                   </Text>
                   <Box w="60%" borderTop="1.5px solid #00796B"></Box>
@@ -84,7 +84,7 @@ export default function Project() {
                 </Box>
                 {/* tech Stack */}
                 <Box className="project-tech-stack">
-                  <Heading size="sm" color="#00796B">
+                  <Heading size="sm" color="#ff651c">
                     Tech Stack
                   </Heading>
                   <Box w="60%" borderTop="1.5px solid #00796B"></Box>
@@ -119,9 +119,9 @@ export default function Project() {
                         <Button
                           className="project-github-link"
                           background="none"
-                          color="#00796B"
-                          outline="1px solid #00796B"
-                          _hover={{ background: "#26A69A", color: "white" }}
+                          color="#ff651c"
+                          outline="1px solid #ff651c"
+                          _hover={{ background: "#ff651c", color: "white" }}
                           borderRadius="0px"
                           mt="10px"
                         >
@@ -134,9 +134,9 @@ export default function Project() {
                         <Button
                           className="project-deployed-link"
                           background="none"
-                          color="#00796B"
-                          outline="1px solid #00796B"
-                          _hover={{ background: "#26A69A", color: "white" }}
+                          color="#ff651c"
+                          outline="1px solid #ff651c"
+                          _hover={{ background: "#ff651c", color: "white" }}
                           mt="10px"
                           borderRadius="0"
                         >

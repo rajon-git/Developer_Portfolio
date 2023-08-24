@@ -10,9 +10,9 @@ export default function ThemeContextProvider({ children }) {
       hover: "#FFF3E0",
     },
     dark: {
-      bg: "black",
-      dText: "#B2DFDB",
-      hover: "#263238",
+      bg: "#212121",
+      dText: "white",
+      hover: "#181818",
     },
     blue: {
       bg: "#08105B",

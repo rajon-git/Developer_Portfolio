@@ -25,12 +25,12 @@ import {
         id="education"
       >
         {/* bar for decoration  */}
-        <Box w="80%" margin="auto" borderTop="1.5px solid #00796B">
+        <Box w="80%" margin="auto" borderTop="1.5px solid #ff651c">
           {/* box 1 for main projects  */}
         </Box>
         <Box m="auto" textAlign="center">
           <Box pt="55px">
-            <Heading color="#00796B" size="2xl">
+            <Heading color="#ff651c" size="2xl">
               Education
             </Heading>
           </Box>
@@ -55,7 +55,7 @@ import {
                     <Heading
                       p="15px 0"
                       size="lg"
-                      color="#71797E"
+                      color="white"
                       className="education-title"
                       
                     >

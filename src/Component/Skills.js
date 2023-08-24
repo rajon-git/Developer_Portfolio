@@ -49,7 +49,7 @@ export default function Skills() {
       <Box w="80%" margin="auto" borderTop="1.5px solid #00796B"></Box>
       <Box textAlign="center" margin="auto" p={{ base: "25px" }}>
         <Box p="35px">
-          <Heading color="#00796B">SKILLS</Heading>
+          <Heading color="#ff651c">SKILLS</Heading>
         </Box>
         <Grid
           gap={{ base: "15px", sm: "10px", md: "25px", lg: "25px" }}
@@ -68,7 +68,7 @@ export default function Skills() {
                 style={{ background: "transparent" }}
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.3)",
+                  boxShadow: "0px 3px 6px rgba(255, 101, 28, 0.5)",
                   background: mainTheme.theme.hover,
                 }}
                 className="skills-card"
@@ -83,7 +83,7 @@ export default function Skills() {
                 <Box alignContent="center" p="15px">
                   <Heading
                     size="md"
-                    color="#563D67"
+                    color="#71797E"
                     className="skills-card-name"
                   >
                     {skill.title}

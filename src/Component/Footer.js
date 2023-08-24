@@ -106,11 +106,11 @@ export default function Footer() {
 
   return (
     <Box textAlign="center" p="15px" bg={mainTheme.theme.bg} id="contact">
-      <Box w="80%" margin="auto" borderTop="1.5px solid #00796B"></Box>
+      <Box w="80%" margin="auto" borderTop="1.5px solid #ff651c"></Box>
       {/*------- footer containter=------ */}
       <Box p="40px 20px" m="auto" textAlign="center">
         <Box>
-          <Heading color="#00796B">Contact Me</Heading>
+          <Heading color="#ff651c">Contact Me</Heading>
         </Box>
         <Grid
           gridTemplateColumns={{
@@ -127,12 +127,12 @@ export default function Footer() {
                 whileTap={{ scale: 0.9 }}
                 style={{ width: "10%" }}
               >
-                <FaUserCircle color="#00796B" size="25px" />
+                <FaUserCircle color="#ff651c" size="25px" />
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Text
                   fontSize="sm"
-                  color="#00796B"
+                  color="#ff651c"
                   fontWeight="500"
                   letterSpacing="0.8px"
                 >
@@ -147,13 +147,13 @@ export default function Footer() {
                 whileTap={{ scale: 0.9 }}
                 style={{ width: "10%" }}
               >
-                <IoMdCall color="#00796B" size="25px" />
+                <IoMdCall color="#ff651c" size="25px" />
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Text
                   id="contact-phone"
                   fontSize="sm"
-                  color="#00796B"
+                  color="#ff651c"
                   fontWeight="500"
                   letterSpacing="0.8px"
                 >
@@ -168,13 +168,13 @@ export default function Footer() {
                 whileTap={{ scale: 0.9 }}
                 style={{ width: "10%" }}
               >
-                <MdEmail color="#00796B" size="25px" />
+                <MdEmail color="#ff651c" size="25px" />
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <a target="_blank" href="mailto:rajon.zhsust15@gmail.com">
                   <Text
                     fontSize="sm"
-                    color="#00796B"
+                    color="#ff651c"
                     fontWeight="500"
                     letterSpacing="0.8px"
                     id="contact-email"
@@ -196,7 +196,7 @@ export default function Footer() {
                     whileTap={{ scale: 0.9 }}
                     style={{ width: "10%" }}
                   >
-                    <AiFillLinkedin color="#00796B" size="25px" />
+                    <AiFillLinkedin color="#ff651c" size="25px" />
                   </motion.div>
                 </a>
               </Box>
@@ -208,7 +208,7 @@ export default function Footer() {
                   <Text
                     id="contact-linkedin"
                     fontSize="sm"
-                    color="#00796B"
+                    color="#ff651c"
                     fontWeight="500"
                     letterSpacing="0.8px"
                   >
@@ -226,7 +226,7 @@ export default function Footer() {
                     whileTap={{ scale: 0.9 }}
                     style={{ width: "10%" }}
                   >
-                    <AiFillGithub color="#00796B" size="25px" />
+                    <AiFillGithub color="#ff651c" size="25px" />
                   </motion.div>
                 </a>
               </Box>
@@ -235,7 +235,7 @@ export default function Footer() {
                   <Text
                     id="contact-github"
                     fontSize="sm"
-                    color="#00796B"
+                    color="#ff651c"
                     fontWeight="500"
                     letterSpacing="0.8px"
                   >
@@ -254,10 +254,10 @@ export default function Footer() {
             <FormControl>
               <Flex mt="15px">
                 <Box w="30%">
-                  <FormLabel color="#00796B">Name:</FormLabel>
+                  <FormLabel color="#ff651c">Name:</FormLabel>
                 </Box>
                 <Input
-                  border="1px solid #00796B"
+                  border="1px solid #ff651c"
                   size="sm"
                   placeholder="Enter Your Name"
                   name="name"
@@ -268,10 +268,10 @@ export default function Footer() {
 
               <Flex mt="25px">
                 <Box w="30%">
-                  <FormLabel color="#00796B">Email:</FormLabel>
+                  <FormLabel color="#ff651c">Email:</FormLabel>
                 </Box>
                 <Input
-                  border="1px solid #00796B"
+                  border="1px solid #ff651c"
                   size="sm"
                   placeholder="Enter Your Email"
                   name="email"
@@ -282,10 +282,10 @@ export default function Footer() {
               {/* number  */}
               <Flex mt="30px">
                 <Box w="30%">
-                  <FormLabel color="#00796B">Number:</FormLabel>
+                  <FormLabel color="#ff651c">Number:</FormLabel>
                 </Box>
                 <Input
-                  border="1px solid #00796B"
+                  border="1px solid #ff651c"
                   size="sm"
                   placeholder="Enter Your Number"
                   name="number"
@@ -296,10 +296,10 @@ export default function Footer() {
               {/* message  */}
               <Flex mt="30px">
                 <Box w="30%">
-                  <FormLabel color="#00796B">Message:</FormLabel>
+                  <FormLabel color="#ff651c">Message:</FormLabel>
                 </Box>
                 <Input
-                  border="1px solid #00796B"
+                  border="1px solid #ff651c"
                   size="sm"
                   placeholder="Enter Your Message"
                   name="message"
@@ -313,9 +313,9 @@ export default function Footer() {
                   onClick={handleSubmit}
                   w={{ base: "100%", sm: "80%" }}
                   background="none"
-                  color="#00796B"
-                  outline="1px solid #00796B"
-                  _hover={{ background: "#26A69A", color: "white" }}
+                  color="#ff651c"
+                  outline="1px solid #ff651c"
+                  _hover={{ background: "#ff651c", color: "white" }}
                   borderRadius="0px"
                   mt="10px"
                 >
@@ -329,9 +329,9 @@ export default function Footer() {
           <BsFillArrowUpSquareFill
             onClick={handleMoveToTop}
             size="35px"
-            color="#00796B"
+            color="#ff651c"
           />
-          <Text color="#00796B" fontWeight="bold">
+          <Text color="#ff651c" fontWeight="bold">
             Top
           </Text>
         </Flex>

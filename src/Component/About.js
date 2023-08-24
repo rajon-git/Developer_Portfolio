@@ -23,7 +23,7 @@ export default function About() {
         w={{ base: "90%", sm: "75%", md: "50%" }}
         p="10px"
         m="auto"
-        borderTop="1.5px solid #00796B"
+        borderTop="1.5px solid #ff651c"
         flexDirection="column"
         justify="center"
         align="center"
@@ -34,7 +34,7 @@ export default function About() {
             <Image
               _hover={{
                 boxShadow:
-                  "rgba(218, 165, 32, 0.4) 0px 5px, rgba(218, 165, 32, 0.3) 0px 10px, rgba(218, 165, 32, 0.2) 0px 15px, rgba(218, 165, 32, 0.1) 0px 20px, rgba(218, 165, 32, 0.05) 0px 25px",
+                  "0px 3px 6px rgba(255, 101, 28, 0.5), 0px 3px 6px rgba(255, 101, 28, 0.3), 0px 3px 6px rgba(255, 101, 28, 0.1), 0px 3px 6px rgba(255, 101, 28, 0.9)",
               }}
               className="home-img"
               style={{
@@ -46,7 +46,7 @@ export default function About() {
             />
           </motion.div>
         </Flex>
-        <Heading color="#00796B" mt="25px">
+        <Heading color="#ff651c" mt="25px">
           About Me
         </Heading>
         <Box mt="5px">
@@ -62,7 +62,7 @@ export default function About() {
             undertake challenging projects and deliver exceptional results
           </Text>
         </Box>
-        <Box p="5px 15px" fontWeight="bolder" color="white">
+        <Box p="5px 15px" fontWeight="bolder" color="#ff651c">
           <Link
             href={resume}
             target="_blank"
@@ -71,9 +71,9 @@ export default function About() {
           >
             <Button
               background="none"
-              color="#26A69A"
-              outline="1px solid #26A69A"
-              _hover={{ background: "#26A69A", color: "white" }}
+              color="#ff651c"
+              outline="1px solid #ff651c"
+              _hover={{ background: "#ff651c", color: "white" }}
               borderRadius="0px"
               mt="10px"
               id="resume-button-2"

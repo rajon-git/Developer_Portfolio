@@ -95,7 +95,7 @@ export default function Intro() {
         <Box p="15px" display={{ base: 'none', sm: 'none', md: 'block' }} position="fixed" left="0" top="35%">
           <motion.div variants={item}>
             <Flex mt="15px" justify="start">
-              <MdEmail color="#26A69A" size="25px" />
+              <MdEmail color="#ff651c" size="25px" />
               
             </Flex>
           </motion.div>
@@ -104,7 +104,7 @@ export default function Intro() {
             <Flex mt="25px">
               <Box w="10%">
                 <a target="_blank" href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/">
-                  <AiFillLinkedin color="#26A69A" size="25px" />
+                  <AiFillLinkedin color="#ff651c" size="25px" />
                 </a>
               </Box>
             </Flex>
@@ -114,7 +114,7 @@ export default function Intro() {
             <Flex mt="25px">
               <Box w="10%">
                 <a target="_blank" href="https://github.com/rajon-git">
-                  <AiFillGithub color="#26A69A" size="25px" />
+                  <AiFillGithub color="#ff651c" size="25px" />
                 </a>
               </Box>
             </Flex>
@@ -130,7 +130,7 @@ export default function Intro() {
           <Flex w={{ base: '90%', sm: '75%', md: '50%' }} p="10px" margin="auto" flexDirection="column" justify="center" align="center" textAlign="center">
             <motion.div variants={item}>
               <Box mb="10px">
-                <Text fontWeight="bold" color="#00796B" fontSize="2xl">
+                <Text fontWeight="bold" color="#ff651c" fontSize="2xl">
                   Hello, I am
                 </Text>
               </Box>
@@ -138,14 +138,14 @@ export default function Intro() {
 
             <motion.div variants={item}>
               <Box mt="15px">
-                <Text fontWeight="500" fontSize="55px" display="inline" color="#00796B" id="user-detail-name" letterSpacing="2px">
+                <Text fontWeight="500" fontSize="55px" display="inline" color="#ff651c" id="user-detail-name" letterSpacing="2px">
                   MD. Rajon Ahamad
                 </Text>
               </Box>
             </motion.div>
 
             <motion.div variants={item}>
-              <Box mt="15px">
+              <Box mt="15px" color="#ff651c">
                 <img src="https://readme-typing-svg.demolab.com?weight=400&size=25&pause=1000&color=26A69A&background=FFFFFF00&center=true&vCenter=true&width=435&lines=A+Full+Stack+Web+Developer;A+Problem+Solver" alt="Typing SVG" />
               </Box>
             </motion.div>
