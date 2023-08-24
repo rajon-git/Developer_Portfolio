@@ -84,7 +84,7 @@ export const NavBar = () => {
               duration={500}
               onClick={onClose}
             >
-              <Text className="nav-link home">HOME</Text>
+              <Text _hover={{cursor:'pointer'}} className="nav-link home">HOME</Text>
             </ScrollLink>
           </Box>
           <Box
@@ -99,7 +99,7 @@ export const NavBar = () => {
               duration={500}
               onClick={onClose}
             >
-              <Text className="nav-link about">ABOUT</Text>
+              <Text _hover={{cursor:'pointer'}} className="nav-link about">ABOUT</Text>
             </ScrollLink>
           </Box>
           <Box
@@ -114,7 +114,7 @@ export const NavBar = () => {
               duration={500}
               onClick={onClose}
             >
-              <Text className="nav-link skills">SKILLS</Text>
+              <Text _hover={{cursor:'pointer'}} className="nav-link skills">SKILLS</Text>
             </ScrollLink>
           </Box>
           <Box
@@ -129,7 +129,7 @@ export const NavBar = () => {
               duration={500}
               onClick={onClose}
             >
-              <Text className="nav-link projects">PROJECTS</Text>
+              <Text className="nav-link projects" _hover={{cursor:'pointer'}}>PROJECTS</Text>
             </ScrollLink>
           </Box>
           <Box
@@ -144,7 +144,7 @@ export const NavBar = () => {
               duration={500}
               onClick={onClose}
             >
-              <Text className="nav-link contact">CONTACT</Text>
+              <Text className="nav-link contact" _hover={{cursor:'pointer'}}>CONTACT</Text>
             </ScrollLink>
           </Box>
           <Box
@@ -153,20 +153,22 @@ export const NavBar = () => {
             fontWeight="bolder"
             color="#00695C"
           >
-            <Box className="nav-link resume">
+            <Box className="nav-link resume" >
               <Link
                 href={resume}
                 target="_blank"
                 download="Sumat-Mallick-Resume"
                 id="resume-link-1"
+                
               >
                 <Text
                   className="nav-link contact"
                   onClick={() =>
                     window.open(
-                      "https://drive.google.com/file/d/1y_buPcHDKpyd4wZsuiGcdFLvlYBfl7Oq/view"
+                      "https://drive.google.com/file/d/1ni4YYEIFx2EWl7TNt-B8ymbVc5wmK7qt/view?usp=drive_link"
                     )
                   }
+                  
                 >
                   RESUME
                 </Text>
@@ -294,10 +296,9 @@ export const NavBar = () => {
               fontWeight="bolder"
               color="white"
             >
-              <Link
+              <a
                 href={resume}
                 download="Sumat-Mallick-Resume"
-                id="resume-link-1"
               >
                 <Button
                   background="none"
@@ -309,13 +310,13 @@ export const NavBar = () => {
                   id="resume-button-1"
                   onClick={() =>
                     window.open(
-                      "https://drive.google.com/file/d/1y_buPcHDKpyd4wZsuiGcdFLvlYBfl7Oq/view"
+                      "https://drive.google.com/file/d/1ni4YYEIFx2EWl7TNt-B8ymbVc5wmK7qt/view?usp=drive_link"
                     )
                   }
                 >
                   Resume
                 </Button>
-              </Link>
+              </a>
             </Box>
           </DrawerBody>
         </DrawerContent>

@@ -31,7 +31,7 @@ export default function Skills() {
         >
           {/* HTML5 */}
           <motion.div
-            drag
+            
             style={{ background: "transparent" }}
             whileHover={{
               scale: 1.05,
@@ -40,7 +40,7 @@ export default function Skills() {
             }}
             className="skills-card"
           >
-            <Flex justifyContent="center" >
+            <Flex justifyContent="center">
               <img
                 className="skills-card-img"
                 style={{ width: "40%" }}
@@ -55,7 +55,7 @@ export default function Skills() {
           </motion.div>
           {/* CSS */}
           <motion.div
-            drag
+            
             style={{ background: "transparent" }}
             whileHover={{
               scale: 1.05,
@@ -79,7 +79,7 @@ export default function Skills() {
           </motion.div>
           {/* JavaScript */}
           <motion.div
-            drag
+            
             style={{ background: "transparent" }}
             whileHover={{
               scale: 1.05,
@@ -106,9 +106,33 @@ export default function Skills() {
               </Heading>
             </Box>
           </motion.div>
+          {/* Redux */}
+          <motion.div
+            
+            style={{ background: "transparent" }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.3)",
+              background: mainTheme.theme.hover,
+            }}
+            className="skills-card"
+          >
+            <Flex justifyContent="center">
+              <img
+                className="skills-card-img"
+                style={{ width: "40%" }}
+                src="https://cdn.iconscout.com/icon/free/png-256/free-redux-283024.png"
+              />
+            </Flex>
+            <Box alignContent="center" p="15px">
+              <Heading size="md" color="#563D67" className="skills-card-name">
+                Redux
+              </Heading>
+            </Box>
+          </motion.div>
           {/* Chakra UI */}
           <motion.div
-            drag
+            
             style={{ background: "transparent" }}
             whileHover={{
               scale: 1.05,
@@ -130,57 +154,9 @@ export default function Skills() {
               </Heading>
             </Box>
           </motion.div>
-          {/* Redux */}
-          <motion.div
-            drag
-            style={{ background: "transparent" }}
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.3)",
-              background: mainTheme.theme.hover,
-            }}
-            className="skills-card"
-          >
-            <Flex justifyContent="center">
-              <img
-                className="skills-card-img"
-                style={{ width: "40%" }}
-                src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/redux-icon.png"
-              />
-            </Flex>
-            <Box alignContent="center" p="15px">
-              <Heading size="md" color="#563D67" className="skills-card-name">
-                Redux
-              </Heading>
-            </Box>
-          </motion.div>
-          {/* Git */}
-          <motion.div
-            drag
-            style={{ background: "transparent" }}
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.3)",
-              background: mainTheme.theme.hover,
-            }}
-            className="skills-card"
-          >
-            <Flex justifyContent="center">
-              <img
-                className="skills-card-img"
-                style={{ width: "40%" }}
-                src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-              />
-            </Flex>
-            <Box alignContent="center" p="15px">
-              <Heading size="md" color="#563D67" className="skills-card-name">
-                Git
-              </Heading>
-            </Box>
-          </motion.div>
           {/* React */}
           <motion.div
-            drag
+            
             style={{ background: "transparent" }}
             whileHover={{
               scale: 1.05,
@@ -202,9 +178,38 @@ export default function Skills() {
               </Heading>
             </Box>
           </motion.div>
+          {/* next.js  */}
+          <motion.div
+            
+            style={{ background: "transparent" }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.3)",
+              background: mainTheme.theme.hover,
+            }}
+            className="skills-card"
+          >
+            <Flex justifyContent="center">
+              <img
+                className="skills-card-img"
+                style={{ width: "40%" }}
+                src="https://www.svgrepo.com/show/354113/nextjs-icon.svg"
+              />
+            </Flex>
+            <Box alignContent="center" p="15px">
+              <Heading
+                size="md"
+                color="#563D67"
+                letterSpacing="1.2px"
+                className="skills-card-name"
+              >
+                Next.js
+              </Heading>
+            </Box>
+          </motion.div>
           {/* TypeScript */}
           <motion.div
-            drag
+            
             style={{ background: "transparent" }}
             whileHover={{
               scale: 1.05,
@@ -233,7 +238,7 @@ export default function Skills() {
           </motion.div>
           {/* Express */}
           <motion.div
-            drag
+            
             style={{ background: "transparent" }}
             whileHover={{
               scale: 1.05,
@@ -290,7 +295,7 @@ export default function Skills() {
           </motion.div>
           {/* Node.js */}
           <motion.div
-            drag
+            
             style={{ background: "transparent" }}
             whileHover={{
               scale: 1.05,
@@ -302,7 +307,7 @@ export default function Skills() {
             <Flex justifyContent="center">
               <img
                 className="skills-card-img"
-                style={{ width: "40%" }}
+                style={{ width: "50%" }}
                 src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png"
               />
             </Flex>
@@ -319,7 +324,7 @@ export default function Skills() {
           </motion.div>
           {/* tailwind css  */}
           <motion.div
-            drag
+            
             style={{ background: "transparent" }}
             whileHover={{
               scale: 1.05,
@@ -343,6 +348,30 @@ export default function Skills() {
                 className="skills-card-name"
               >
                 Tailwind CSS
+              </Heading>
+            </Box>
+          </motion.div>
+          {/* Git */}
+          <motion.div
+            
+            style={{ background: "transparent" }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.3)",
+              background: mainTheme.theme.hover,
+            }}
+            className="skills-card"
+          >
+            <Flex justifyContent="center">
+              <img
+                className="skills-card-img"
+                style={{ width: "40%" }}
+                src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+              />
+            </Flex>
+            <Box alignContent="center" p="15px">
+              <Heading size="md" color="#563D67" className="skills-card-name">
+                Git
               </Heading>
             </Box>
           </motion.div>
