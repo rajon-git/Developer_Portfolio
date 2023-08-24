@@ -136,7 +136,7 @@ export default function Footer() {
                   fontWeight="500"
                   letterSpacing="0.8px"
                 >
-                  Sumat Mallick
+                  MD. Rajon Ahamad
                 </Text>
               </motion.div>
             </Flex>
@@ -157,7 +157,7 @@ export default function Footer() {
                   fontWeight="500"
                   letterSpacing="0.8px"
                 >
-                  +91-8894417615
+                  +880 19900-20467
                 </Text>
               </motion.div>
             </Flex>
@@ -171,7 +171,7 @@ export default function Footer() {
                 <MdEmail color="#00796B" size="25px" />
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <a target="_blank" href="mailto: sumatmallick@gmail.com">
+                <a target="_blank" href="mailto:rajon.zhsust15@gmail.com">
                   <Text
                     fontSize="sm"
                     color="#00796B"
@@ -179,7 +179,7 @@ export default function Footer() {
                     letterSpacing="0.8px"
                     id="contact-email"
                   >
-                    Sumatmallick@gmail.com
+                    rajon.zhsust15@gmail.com
                   </Text>
                 </a>
               </motion.div>
@@ -189,7 +189,7 @@ export default function Footer() {
               <Box w="10%">
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/in/sumat-mallick-65b966227/"
+                  href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/"
                 >
                   <motion.div
                     whileHover={{ scale: 1.1 }}
@@ -203,7 +203,7 @@ export default function Footer() {
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/in/sumat-mallick-65b966227/"
+                  href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/"
                 >
                   <Text
                     id="contact-linkedin"
@@ -212,7 +212,7 @@ export default function Footer() {
                     fontWeight="500"
                     letterSpacing="0.8px"
                   >
-                    Sumat Mallick
+                    Rajon Ahamad
                   </Text>
                 </a>
               </motion.div>
@@ -220,7 +220,7 @@ export default function Footer() {
             {/* github */}
             <Flex mt="25px">
               <Box w="10%">
-                <a target="_blank" href="https://github.com/SumatM">
+                <a target="_blank" href="https://github.com/rajon-git">
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -231,7 +231,7 @@ export default function Footer() {
                 </a>
               </Box>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <a target="_blank" href="https://github.com/SumatM">
+                <a target="_blank" href="https://github.com/rajon-git">
                   <Text
                     id="contact-github"
                     fontSize="sm"
@@ -239,7 +239,7 @@ export default function Footer() {
                     fontWeight="500"
                     letterSpacing="0.8px"
                   >
-                    SumatM
+                    rajon-git
                   </Text>
                 </a>
               </motion.div>
