@@ -10,13 +10,12 @@ import {
   html,
   javascript,
   mongodb,
-  nextjs,
   node,
   python,
   react,
   redux,
   tailwind,
-  typescript,
+  cPlus,
 } from "../db/techstack";
 
 export default function Skills() {
@@ -27,8 +26,6 @@ export default function Skills() {
     css,
     javascript,
     react,
-    nextjs,
-    typescript,
     express,
     mongodb,
     node,
@@ -36,7 +33,8 @@ export default function Skills() {
     chakra,
     tailwind,
     git,
-    python
+    python,
+    cPlus
   ];
 
   return (

@@ -75,12 +75,6 @@ export const html = {
     swid: "40%",
   };
   
-  export const nextjs = {
-    title: "Next.js",
-    img: "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
-    wid: "65%",
-    swid: "40%",
-  };
   
   export const git = {
     title: "Git",
@@ -88,18 +82,17 @@ export const html = {
     wid: "65%",
     swid: "40%",
   };
-  
-  export const typescript = {
-    title: "TypeScript",
-    img: "https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png",
-    wid: "65%",
-    swid: "40%",
-  };
-  
-  
+    
   export const python = {
     title:"Python",
     img:"https://img.freepik.com/free-icon/snakes_318-368381.jpg",
+    wid: "70%",
+    swid: "40%",
+  };
+
+  export const cPlus = {
+    title:"C++",
+    img:"https://brandslogos.com/wp-content/uploads/images/c-logo.png",
     wid: "70%",
     swid: "40%",
   }

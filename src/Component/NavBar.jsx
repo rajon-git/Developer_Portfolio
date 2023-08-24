@@ -68,15 +68,15 @@ export const NavBar = () => {
         zIndex="99"
         w="60%"
         m="auto"
-        border="1px solid #00796B"
+        border="1px solid #ff651c"
         borderRadius="25px"
       >
         <Flex w="70%" justify="space-between" letterSpacing="1px" m="auto">
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FF7F3E" }}
             fontWeight="bolder"
-            color={activeSection === "home" ? "#ff641c" : "#ff651c"}
+            color={activeSection === "home" ? "#FF7F3E" : "#ff651c"}
           >
             <ScrollLink
               to="home"
@@ -89,9 +89,9 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FF7F3E" }}
             fontWeight="bolder"
-            color={activeSection === "about" ? "#ff641c" : "#ff651c"}
+            color={activeSection === "about" ? "#FF7F3E" : "#ff651c"}
           >
             <ScrollLink
               to="about"
@@ -104,9 +104,9 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FF7F3E" }}
             fontWeight="bolder"
-            color={activeSection === "about" ? "#4DB6AC" : "#ff651c"}
+            color={activeSection === "about" ? "#FF7F3E" : "#ff651c"}
           >
             <ScrollLink
               to="education"
@@ -119,9 +119,9 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FF7F3E" }}
             fontWeight="bolder"
-            color={activeSection === "skills" ? "#4DB6AC" : "#ff651c"}
+            color={activeSection === "skills" ? "#FF7F3E" : "#ff651c"}
           >
             <ScrollLink
               to="skills"
@@ -134,9 +134,9 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FF7F3E" }}
             fontWeight="bolder"
-            color={activeSection === "projects" ? "#4DB6AC" : "#ff651c"}
+            color={activeSection === "projects" ? "#FF7F3E" : "#ff651c"}
           >
             <ScrollLink
               to="projects"
@@ -149,9 +149,9 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FF7F3E" }}
             fontWeight="bolder"
-            color={activeSection === "contact" ? "#4DB6AC" : "#ff651c"}
+            color={activeSection === "contact" ? "#FF7F3E" : "#ff651c"}
           >
             <ScrollLink
               to="contact"
