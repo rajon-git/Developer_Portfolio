@@ -96,13 +96,14 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="15px" justify="start">
               <MdEmail color="#26A69A" size="25px" />
+              
             </Flex>
           </motion.div>
 
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a target="_blank" href="https://www.linkedin.com/in/sumat-mallick-65b966227/">
+                <a target="_blank" href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/">
                   <AiFillLinkedin color="#26A69A" size="25px" />
                 </a>
               </Box>
@@ -112,7 +113,7 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a target="_blank" href="https://github.com/SumatM">
+                <a target="_blank" href="https://github.com/rajon-git">
                   <AiFillGithub color="#26A69A" size="25px" />
                 </a>
               </Box>
@@ -138,7 +139,7 @@ export default function Intro() {
             <motion.div variants={item}>
               <Box mt="15px">
                 <Text fontWeight="500" fontSize="55px" display="inline" color="#00796B" id="user-detail-name" letterSpacing="2px">
-                  Sumat Mallick
+                  MD. Rajon Ahamad
                 </Text>
               </Box>
             </motion.div>
