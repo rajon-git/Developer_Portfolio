@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { ThemeContext } from "./ThemeContext";
 import { useContext } from "react";
@@ -15,7 +15,10 @@ import {
   react,
   redux,
   tailwind,
-  cPlus,
+  C,
+  cplus,
+  Django,
+  mysql
 } from "../db/techstack";
 
 export default function Skills() {
@@ -34,7 +37,10 @@ export default function Skills() {
     tailwind,
     git,
     python,
-    cPlus
+    C,
+    cplus,
+    Django,
+    mysql
   ];
 
   return (
@@ -44,7 +50,7 @@ export default function Skills() {
       id="skills"
       pb="50px"
     >
-      <Box w="80%" margin="auto" borderTop="1.5px solid #00796B"></Box>
+      <Box w="80%" margin="auto" borderTop="1.5px solid #ff651c"></Box>
       <Box textAlign="center" margin="auto" p={{ base: "25px" }}>
         <Box p="35px">
           <Heading color="#ff651c">SKILLS</Heading>

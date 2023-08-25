@@ -8,14 +8,9 @@ import {
   DrawerContent,
   DrawerBody,
   useDisclosure,
-  Button,
-  Spacer,
-  Link,
 } from "@chakra-ui/react";
 import { useRef } from "react";
-import logo from './Rajon.png'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import resume from './../Banner/RAJON_MERN.pdf'
 import { Link as ScrollLink } from "react-scroll";
 
 export const NavBar = () => {
@@ -74,9 +69,9 @@ export const NavBar = () => {
         <Flex w="70%" justify="space-between" letterSpacing="1px" m="auto">
           <Box
             p="5px 15px"
-            _hover={{ color: "#FF7F3E" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-            color={activeSection === "home" ? "#FF7F3E" : "#ff651c"}
+            color={activeSection === "home" ? "#FFBC9C" : "#ff651c"}
           >
             <ScrollLink
               to="home"
@@ -89,9 +84,9 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#FF7F3E" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-            color={activeSection === "about" ? "#FF7F3E" : "#ff651c"}
+            color={activeSection === "about" ? "#FFBC9C" : "#ff651c"}
           >
             <ScrollLink
               to="about"
@@ -104,9 +99,9 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#FF7F3E" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-            color={activeSection === "about" ? "#FF7F3E" : "#ff651c"}
+            color={activeSection === "about" ? "#FFBC9C" : "#ff651c"}
           >
             <ScrollLink
               to="education"
@@ -119,9 +114,9 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#FF7F3E" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-            color={activeSection === "skills" ? "#FF7F3E" : "#ff651c"}
+            color={activeSection === "skills" ? "#FFBC9C" : "#ff651c"}
           >
             <ScrollLink
               to="skills"
@@ -134,9 +129,9 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#FF7F3E" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-            color={activeSection === "projects" ? "#FF7F3E" : "#ff651c"}
+            color={activeSection === "projects" ? "#FFBC9C" : "#ff651c"}
           >
             <ScrollLink
               to="projects"
@@ -149,9 +144,9 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#FF7F3E" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-            color={activeSection === "contact" ? "#FF7F3E" : "#ff651c"}
+            color={activeSection === "contact" ? "#FFBC9C" : "#ff651c"}
           >
             <ScrollLink
               to="contact"

@@ -1,29 +1,25 @@
-import {
-  Box,
-  Text,
-  Flex,
-} from "@chakra-ui/react";
-import { motion } from "framer-motion";
-import { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
-import { MdEmail } from "react-icons/md";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { Box, Text, Flex, Popover, PopoverContent, PopoverBody } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import { useContext } from 'react';
+import { ThemeContext } from './ThemeContext';
+import { MdEmail } from 'react-icons/md';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export default function Intro() {
   const theme = useContext(ThemeContext);
 
-  function handleDark() {
+  function handleDark(){
     theme.handleTheme("dark");
   }
-  function handleLight() {
+  function handleLight(){
     theme.handleTheme("light");
   }
 
-  function handleBlue() {
+  function handleBlue(){
     theme.handleTheme("blue");
   }
 
-  function handleGreen() {
+  function handleGreen(){
     theme.handleTheme("green");
   }
 
@@ -34,7 +30,7 @@ export default function Intro() {
       transition: {
         duration: 0.5,
         staggerChildren: 0.2,
-        when: "beforeChildren",
+        when: 'beforeChildren',
       },
     },
   };
@@ -45,33 +41,42 @@ export default function Intro() {
   };
 
   return (
-    <motion.div variants={container} initial="hidden" animate="visible">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="visible"
+    >
       <Box
         id="home"
         className="about section"
         background={theme && theme.bg}
         p="15px"
       >
-        <Box
-          p="15px"
-          display={{ base: "none", sm: "none", md: "block" }}
-          position="fixed"
-          left="0"
-          top="35%"
-        >
+      
+        
+        <Popover>
+      
+      <PopoverContent mr='20px' mt='20px' p={3} w='250px' bg="gray.200" border='1px solid #00796B'>
+        <PopoverBody>
+            <Box border='1px solid #00796B' borderRadius='50%' onClick={handleDark}>
+            <Box  bg='black' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
+            </Box>
+        </PopoverBody>
+      </PopoverContent>
+      
+    </Popover>
+        <Box p="15px" display={{ base: 'none', sm: 'none', md: 'block' }} position="fixed" left="0" top="35%">
           <motion.div variants={item}>
             <Flex mt="15px" justify="start">
               <MdEmail color="#ff651c" size="25px" />
+              
             </Flex>
           </motion.div>
 
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/"
-                >
+                <a target="_blank" href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/">
                   <AiFillLinkedin color="#ff651c" size="25px" />
                 </a>
               </Box>
@@ -89,21 +94,13 @@ export default function Intro() {
           </motion.div>
         </Box>
         <Flex
-          pt={{ base: "55px", sm: "45px", md: "55px" }}
+          pt={{ base: '55px', sm: '45px', md: '55px' }}
           pb="50px"
           margin="auto"
-          flexDirection={{ base: "column", sm: "column", md: "column" }}
+          flexDirection={{ base: 'column', sm: 'column', md: 'column' }}
           w="90%"
         >
-          <Flex
-            w={{ base: "90%", sm: "75%", md: "50%" }}
-            p="10px"
-            margin="auto"
-            flexDirection="column"
-            justify="center"
-            align="center"
-            textAlign="center"
-          >
+          <Flex w={{ base: '90%', sm: '75%', md: '50%' }} p="10px" margin="auto" flexDirection="column" justify="center" align="center" textAlign="center">
             <motion.div variants={item}>
               <Box mb="10px">
                 <Text fontWeight="bold" color="#ff651c" fontSize="2xl">
@@ -114,27 +111,19 @@ export default function Intro() {
 
             <motion.div variants={item}>
               <Box mt="15px">
-                <Text
-                  fontWeight="500"
-                  fontSize="55px"
-                  display="inline"
-                  color="#ff651c"
-                  id="user-detail-name"
-                  letterSpacing="2px"
-                >
+                <Text fontWeight="500" fontSize="55px" display="inline" color="#ff651c" id="user-detail-name" letterSpacing="2px">
                   MD. Rajon Ahamad
                 </Text>
               </Box>
             </motion.div>
 
             <motion.div variants={item}>
-              <Box mb="10px">
-                <Text fontWeight="bold" color="#ff651c" fontSize="2xl">
+              <Box mt="15px" color="#ff651c">
+              <Text fontWeight="bold" color="#ff651c" fontSize="2xl">
                   Mern Developer
                 </Text>
-              </Box>
+                </Box>
             </motion.div>
-
           </Flex>
 
           {/* About Me */}

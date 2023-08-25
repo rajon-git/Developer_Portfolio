@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Box, Flex, Heading } from '@chakra-ui/react';
 import GitHubCalendar from 'react-github-calendar';
-import explicitTheme from 'react-github-calendar'
-import { ThemeContext } from "./ThemeContext";
 import axios from 'axios';
 
 export default function GitCalendar() {
-  const theme = useContext(ThemeContext);
+  
   const [contributions, setContributions] = useState([]);
   const githubUsername = 'rajon-git';
 
