@@ -1,3 +1,7 @@
+import c from "./../Banner/c.png"
+import Mysql from "./../Banner/Mysql.png"
+import cPlus from "./../Banner/cPlus.png"
+import django from "./../Banner/django.png"
 export const html = {
     title: "HTML",
     img: "https://cdn-icons-png.flaticon.com/512/1532/1532556.png",
@@ -75,10 +79,42 @@ export const html = {
     wid: "65%",
     swid: "40%",
   };
+<<<<<<< HEAD
    
+=======
+  
+>>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
   export const python = {
     title:"Python",
     img:"https://img.freepik.com/free-icon/snakes_318-368381.jpg",
+    wid: "70%",
+    swid: "40%",
+  };
+
+  export const cplus = {
+    title:"C++",
+    img:cPlus,
+    wid: "70%",
+    swid: "40%",
+  };
+
+  export const C = {
+    title:"C",
+    img:c,
+    wid: "70%",
+    swid: "40%",
+  };
+
+  export const Django = {
+    title:"django",
+    img:django,
+    wid: "70%",
+    swid: "40%",
+  }
+
+  export const mysql = {
+    title:"MySql",
+    img:Mysql,
     wid: "70%",
     swid: "40%",
   }

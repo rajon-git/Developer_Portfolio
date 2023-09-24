@@ -7,9 +7,7 @@ import {
   Grid,
   Heading,
   Input,
-  Spacer,
   Text,
-  Textarea,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaUserCircle } from "react-icons/fa";
@@ -48,13 +46,13 @@ export default function Footer() {
 
     if (name && email && number && message) {
       if (!validateNumber(number)) {
-        alert("Please enter a valid 10 digit Number.");
+        alert("Please enter a valid 11 digit Number.");
         return;
       }
       if (validateEmail(email)) {
         emailjs
           .send(
-            process.env.REACT_APP_KEY1,
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
             process.env.REACT_APP_KEY2,
             form,
             process.env.REACT_APP_PUBLIC_KEY
@@ -98,7 +96,7 @@ export default function Footer() {
       }
     }
 
-    if (count === 10) {
+    if (count === 11) {
       return true;
     }
     return false;
@@ -282,7 +280,7 @@ export default function Footer() {
               {/* number  */}
               <Flex mt="30px">
                 <Box w="30%">
-                  <FormLabel color="#26A69A">Number:</FormLabel>
+                  <FormLabel color="#ff651c">Number:</FormLabel>
                 </Box>
                 <Input
                   border="1px solid #26A69A"
@@ -291,6 +289,7 @@ export default function Footer() {
                   name="number"
                   onChange={handleinput}
                   value={form.number}
+                  
                 />
               </Flex>
               {/* message  */}

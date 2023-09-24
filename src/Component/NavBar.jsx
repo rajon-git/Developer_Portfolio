@@ -8,14 +8,9 @@ import {
   DrawerContent,
   DrawerBody,
   useDisclosure,
-  Button,
-  Spacer,
-  Link,
 } from "@chakra-ui/react";
 import { useRef } from "react";
-import logo from './Rajon.png'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import resume from './../Banner/RAJON_MERN.pdf'
 import { Link as ScrollLink } from "react-scroll";
 
 export const NavBar = () => {
@@ -68,15 +63,19 @@ export const NavBar = () => {
         zIndex="99"
         w="60%"
         m="auto"
-        border="1px solid #00796B"
+        border="1px solid #ff651c"
         borderRadius="25px"
       >
         <Flex w="70%" justify="space-between" letterSpacing="1px" m="auto">
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
+<<<<<<< HEAD
             color={activeSection === "home" ? "#26A69A" : "#26A69A"}
+=======
+            color={activeSection === "home" ? "#FFBC9C" : "#ff651c"}
+>>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
           >
             <ScrollLink
               to="home"
@@ -89,9 +88,13 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
+<<<<<<< HEAD
             color={activeSection === "about" ? "#26A69A" : "#26A69A"}
+=======
+            color={activeSection === "about" ? "#FFBC9C" : "#ff651c"}
+>>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
           >
             <ScrollLink
               to="about"
@@ -104,9 +107,13 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
+<<<<<<< HEAD
             color={activeSection === "about" ? "#26A69A" : "#26A69A"}
+=======
+            color={activeSection === "about" ? "#FFBC9C" : "#ff651c"}
+>>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
           >
             <ScrollLink
               to="education"
@@ -119,9 +126,13 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
+<<<<<<< HEAD
             color={activeSection === "skills" ? "#26A69A" : "#26A69A"}
+=======
+            color={activeSection === "skills" ? "#FFBC9C" : "#ff651c"}
+>>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
           >
             <ScrollLink
               to="skills"
@@ -134,9 +145,13 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
+<<<<<<< HEAD
             color={activeSection === "projects" ? "#26A69A" : "#26A69A"}
+=======
+            color={activeSection === "projects" ? "#FFBC9C" : "#ff651c"}
+>>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
           >
             <ScrollLink
               to="projects"
@@ -149,9 +164,13 @@ export const NavBar = () => {
           </Box>
           <Box
             p="5px 15px"
-            _hover={{ color: "#4DB6AC" }}
+            _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
+<<<<<<< HEAD
             color={activeSection === "contact" ? "#26A69A" : "#26A69A"}
+=======
+            color={activeSection === "contact" ? "#FFBC9C" : "#ff651c"}
+>>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
           >
             <ScrollLink
               to="contact"

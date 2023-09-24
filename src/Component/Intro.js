@@ -1,23 +1,12 @@
-import {
-  Box,
-  Text,
-  Button,
-  Flex,
-  Image,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  PopoverBody,
-  Link,
-} from "@chakra-ui/react";
-import { motion } from "framer-motion";
-import { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
-import { MdEmail } from "react-icons/md";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import imgOlive from "./../Banner/rajon.jpg";
-import resume from "./../Banner/RAJON_MERN.pdf";
-import { BiSun } from "react-icons/bi";
+import { Box, Text, Button, Flex, Image, Popover, PopoverTrigger, PopoverContent, PopoverBody, Link } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import { useContext } from 'react';
+import { ThemeContext } from './ThemeContext';
+import { MdEmail } from 'react-icons/md';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import imgOlive from './../Banner/rajon.jpg'
+import resume from './../Banner/RAJON_MERN.pdf'
+import {FcSettings} from 'react-icons/fc'
 
 export default function Intro() {
   const theme = useContext(ThemeContext);
@@ -57,78 +46,41 @@ export default function Intro() {
         p="15px"
       >
         <Popover>
-          <PopoverTrigger>
-            <Box
-              position="fixed"
-              right={{ base: "31px", sm: "42px", md: "50px", lg: "4" }}
-              top={{ base: "65px", sm: "65px", md: "60px", lg: "3" }}
-            >
-              <BiSun
-                size="30px"
-                color="#26A69A"
-                style={{ borderRadius: "50%", boxShadow: "0 0 10px #26A69A" }}
-              />
+      <PopoverTrigger>
+      <Box position='fixed' right={{base:'31px',sm:'42px',md:'50px',lg:'4'}} top={{base:'65px',sm:'65px',md:'60px',lg:'3'}}>
+        <FcSettings size='30px' color='#26A69A'/>
+        </Box>
+      </PopoverTrigger>
+      <PopoverContent mr='20px' mt='20px' p={3} w='250px' bg="gray.200" border='1px solid #00796B'>
+        <PopoverBody>
+          <Flex justify='space-between'>
+      {/* light theme  */}
+            <Box border='1px solid #00796B' borderRadius='50%' onClick={handleLight}>
+            <Box  bg='linear-gradient(90deg, rgba(202,198,198,0) 0%, rgba(223,225,224,1) 0%, rgba(70,255,125,0.14066876750700286) 33%, rgba(0,254,255,0.3339460784313726) 79%)' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
             </Box>
-          </PopoverTrigger>
-          <PopoverContent
-            margin="auto"
-            mt="10px"
-            p={2}
-            mx="5"
-            w="100px"
-            h="50px"
-            bg="gray.500"
-            border="1px solid #00796B"
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center', 
-            }}
-          >
-            <PopoverBody>
-              <Flex justify="space-between">
-                {/* light theme  */}
-                <Box
-                  border="1px solid #ffffff"
-                  borderRadius="50%"
-                  onClick={handleLight}
-                >
-                  <Box
-                    bg="#ffffff"
-                    borderRadius="50%"
-                    m="3px"
-                    width="30px"
-                    height="30px"
-                  ></Box>
-                </Box>
-                {/* dark theme */}
-                <Box
-                  border="1px solid #1E1E1E"
-                  borderRadius="50%"
-                  onClick={handleDark}
-                >
-                  <Box
-                    bg="#1E1E1E"
-                    borderRadius="50%"
-                    m="3px"
-                    width="30px"
-                    height="30px"
-                  ></Box>
-                </Box>
-                {/* b theme  */}
-               
-              </Flex>
-            </PopoverBody>
-          </PopoverContent>
-        </Popover>
+      {/* dark theme */}
+            <Box border='1px solid #00796B' borderRadius='50%' onClick={handleDark}>
+            <Box  bg='black' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
+            </Box>
+        {/* blue theme  */}
+            <Box border='1px solid #08105B' borderRadius='50%' onClick={handleBlue}>
+            <Box  bg='#242582' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
+            </Box>
+      {/* green theme  */}
+            <Box border='1px solid #00796B' borderRadius='50%' onClick={handleGreen}>
+            <Box  bg='#E8F5E9' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
+            </Box>
 
-        <Box
-          p="15px"
-          display={{ base: "none", sm: "none", md: "block" }}
-          position="fixed"
-          left="0"
-          top="35%"
-        >
+            
+            
+          </Flex>
+        </PopoverBody>
+      </PopoverContent>
+      
+    </Popover>
+
+
+        <Box p="15px" display={{ base: 'none', sm: 'none', md: 'block' }} position="fixed" left="0" top="35%">
           <motion.div variants={item}>
             <Flex mt="15px" justify="start">
               <a target="_blank" href="mailto:rajon.zhsust15@gmail.com">
@@ -201,10 +153,7 @@ export default function Intro() {
 
             <motion.div variants={item}>
               <Box mt="15px" color="#ff651c">
-                <img
-                  src="https://readme-typing-svg.demolab.com?weight=400&size=25&pause=1000&color=26A69A&background=FFFFFF00&center=true&vCenter=true&width=435&lines=A+Full+Stack+Web+Developer;A+Problem+Solver"
-                  alt="Typing SVG"
-                />
+                <img src="https://readme-typing-svg.demolab.com?weight=400&size=25&pause=1000&color=26A69A&background=FFFFFF00&center=true&vCenter=true&width=435&lines=A+Full+Stack+Web+Developer;A+Problem+Solver" alt="Typing SVG" />
               </Box>
             </motion.div>
           </Flex>
