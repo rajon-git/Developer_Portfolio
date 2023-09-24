@@ -63,7 +63,7 @@ export const NavBar = () => {
         zIndex="99"
         w="60%"
         m="auto"
-        border="1px solid #ff651c"
+        border="1px solid #26A69A"
         borderRadius="25px"
       >
         <Flex w="70%" justify="space-between" letterSpacing="1px" m="auto">

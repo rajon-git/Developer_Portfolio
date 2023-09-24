@@ -280,7 +280,7 @@ export default function Footer() {
               {/* number  */}
               <Flex mt="30px">
                 <Box w="30%">
-                  <FormLabel color="#ff651c">Number:</FormLabel>
+                  <FormLabel color="#26A69A">Number:</FormLabel>
                 </Box>
                 <Input
                   border="1px solid #26A69A"
