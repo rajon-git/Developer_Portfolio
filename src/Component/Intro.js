@@ -62,14 +62,6 @@ export default function Intro() {
             <Box border='1px solid #00796B' borderRadius='50%' onClick={handleDark}>
             <Box  bg='black' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
             </Box>
-        {/* blue theme  */}
-            <Box border='1px solid #08105B' borderRadius='50%' onClick={handleBlue}>
-            <Box  bg='#242582' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
-            </Box>
-      {/* green theme  */}
-            <Box border='1px solid #00796B' borderRadius='50%' onClick={handleGreen}>
-            <Box  bg='#E8F5E9' borderRadius='50%' m='3px' width='30px' height='30px'></Box>
-            </Box>
 
             
             

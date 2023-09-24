@@ -71,11 +71,7 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-<<<<<<< HEAD
             color={activeSection === "home" ? "#26A69A" : "#26A69A"}
-=======
-            color={activeSection === "home" ? "#FFBC9C" : "#ff651c"}
->>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
           >
             <ScrollLink
               to="home"
@@ -90,11 +86,8 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-<<<<<<< HEAD
             color={activeSection === "about" ? "#26A69A" : "#26A69A"}
-=======
-            color={activeSection === "about" ? "#FFBC9C" : "#ff651c"}
->>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
+
           >
             <ScrollLink
               to="about"
@@ -109,11 +102,8 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-<<<<<<< HEAD
             color={activeSection === "about" ? "#26A69A" : "#26A69A"}
-=======
-            color={activeSection === "about" ? "#FFBC9C" : "#ff651c"}
->>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
+
           >
             <ScrollLink
               to="education"
@@ -128,11 +118,8 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-<<<<<<< HEAD
             color={activeSection === "skills" ? "#26A69A" : "#26A69A"}
-=======
-            color={activeSection === "skills" ? "#FFBC9C" : "#ff651c"}
->>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
+
           >
             <ScrollLink
               to="skills"
@@ -147,11 +134,8 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-<<<<<<< HEAD
             color={activeSection === "projects" ? "#26A69A" : "#26A69A"}
-=======
-            color={activeSection === "projects" ? "#FFBC9C" : "#ff651c"}
->>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
+
           >
             <ScrollLink
               to="projects"
@@ -166,11 +150,8 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-<<<<<<< HEAD
             color={activeSection === "contact" ? "#26A69A" : "#26A69A"}
-=======
-            color={activeSection === "contact" ? "#FFBC9C" : "#ff651c"}
->>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
+
           >
             <ScrollLink
               to="contact"

@@ -15,13 +15,11 @@ import {
   react,
   redux,
   tailwind,
-<<<<<<< HEAD
-=======
   C,
   cplus,
   Django,
   mysql
->>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
+
 } from "../db/techstack";
 
 export default function Skills() {
@@ -53,11 +51,8 @@ export default function Skills() {
       id="skills"
       pb="50px"
     >
-<<<<<<< HEAD
       <Box w="80%" margin="auto" borderTop="1.5px solid #26A69A"></Box>
-=======
-      <Box w="80%" margin="auto" borderTop="1.5px solid #ff651c"></Box>
->>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
+
       <Box textAlign="center" margin="auto" p={{ base: "25px" }}>
         <Box p="35px">
           <Heading color="#26A69A">SKILLS</Heading>

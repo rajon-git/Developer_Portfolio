@@ -79,11 +79,6 @@ export const html = {
     wid: "65%",
     swid: "40%",
   };
-<<<<<<< HEAD
-   
-=======
-  
->>>>>>> a4e3b16885a9f8ebe72f04242b838edcb90cb44d
   export const python = {
     title:"Python",
     img:"https://img.freepik.com/free-icon/snakes_318-368381.jpg",
