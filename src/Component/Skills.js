@@ -10,13 +10,11 @@ import {
   html,
   javascript,
   mongodb,
-  nextjs,
   node,
   python,
   react,
   redux,
   tailwind,
-  typescript,
 } from "../db/techstack";
 
 export default function Skills() {
@@ -27,8 +25,6 @@ export default function Skills() {
     css,
     javascript,
     react,
-    nextjs,
-    typescript,
     express,
     mongodb,
     node,
@@ -46,10 +42,10 @@ export default function Skills() {
       id="skills"
       pb="50px"
     >
-      <Box w="80%" margin="auto" borderTop="1.5px solid #00796B"></Box>
+      <Box w="80%" margin="auto" borderTop="1.5px solid #26A69A"></Box>
       <Box textAlign="center" margin="auto" p={{ base: "25px" }}>
         <Box p="35px">
-          <Heading color="#ff651c">SKILLS</Heading>
+          <Heading color="#26A69A">SKILLS</Heading>
         </Box>
         <Grid
           gap={{ base: "15px", sm: "10px", md: "25px", lg: "25px" }}
@@ -68,7 +64,7 @@ export default function Skills() {
                 style={{ background: "transparent" }}
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: "0px 3px 6px rgba(255, 101, 28, 0.5)",
+                  boxShadow: "0px 3px 6px rgba(38, 166, 154, 0.5)",
                   background: mainTheme.theme.hover,
                 }}
                 className="skills-card"

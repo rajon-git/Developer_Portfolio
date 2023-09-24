@@ -45,10 +45,10 @@ export default function GitCalendar() {
 
   return (
     <Box  pt='25px' textAlign='center'>
-    <Box w='80%'  margin="auto" borderTop="1.5px solid #ff651c"></Box>
-       <Heading p='25px' color='#ff651c' size='2xl'>GitHub</Heading>
+    <Box w='80%'  margin="auto" borderTop="1.5px solid #26A69A"></Box>
+       <Heading p='25px' color='#26A69A' size='2xl'>GitHub</Heading>
        <Box p='40px 20px' w='97%' m='auto' textAlign='center'>
-       <Flex justify='center'  p='45px' className="react-activity-calendar"  color='#ff651c' >
+       <Flex justify='center'  p='45px' className="react-activity-calendar"  color='#26A69A' >
        <GitHubCalendar  style={{width:"100%"}}
             username="rajon-git"
             blockSize={20}

@@ -8,7 +8,7 @@ import {
 
 } from "@chakra-ui/react";
 import { ThemeContext } from "./ThemeContext";
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useRef } from "react";
 import { ProjectList } from "../db/projectdb";
 import { Link } from "react-router-dom";
 
@@ -24,12 +24,12 @@ export default function Project() {
       id="projects"
     >
       {/* bar for decoration  */}
-      <Box w="80%" margin="auto" borderTop="1.5px solid #ff651c">
+      <Box w="80%" margin="auto" borderTop="1.5px solid #26A69A">
         {/* box 1 for main projects  */}
       </Box>
       <Box m="auto" textAlign="center">
         <Box pt="55px">
-          <Heading color="#ff651c" size="2xl">
+          <Heading color="#26A69A" size="2xl">
             PROJECTS
           </Heading>
         </Box>
@@ -50,14 +50,14 @@ export default function Project() {
                 p="0 20px"
                 textAlign="left"
                 className="project-card"
-                boxShadow="0px 3px 6px rgba(255, 101, 28, 0.5)"
+                boxShadow="0px 3px 6px rgba(38, 166, 154, 0.5)"
                 _hover={{ background: mainTheme.theme.hover }}
               >
                 <Box>
                   <Heading
                     p="15px 0"
                     size="lg"
-                    color="#ff651c"
+                    color="#26A69A"
                     className="project-title"
                   >
                     {project.heading}
@@ -71,7 +71,7 @@ export default function Project() {
                   </Link>
                 </Box>
                 <Box p="15px 0">
-                  <Text fontWeight="bold" m="5px 0" color="#ff651c">
+                  <Text fontWeight="bold" m="5px 0" color="#26A69A">
                     {project.title}
                   </Text>
                   <Box w="60%" borderTop="1.5px solid #00796B"></Box>
@@ -84,7 +84,7 @@ export default function Project() {
                 </Box>
                 {/* tech Stack */}
                 <Box className="project-tech-stack">
-                  <Heading size="sm" color="#ff651c">
+                  <Heading size="sm" color="#26A69A">
                     Tech Stack
                   </Heading>
                   <Box w="60%" borderTop="1.5px solid #00796B"></Box>
@@ -119,8 +119,8 @@ export default function Project() {
                         <Button
                           className="project-github-link"
                           background="none"
-                          color="#ff651c"
-                          outline="1px solid #ff651c"
+                          color="#26A69A"
+                          outline="1px solid #26A69A"
                           _hover={{ background: "#ff651c", color: "white" }}
                           borderRadius="0px"
                           mt="10px"
@@ -134,9 +134,9 @@ export default function Project() {
                         <Button
                           className="project-deployed-link"
                           background="none"
-                          color="#ff651c"
-                          outline="1px solid #ff651c"
-                          _hover={{ background: "#ff651c", color: "white" }}
+                          color="#26A69A"
+                          outline="1px solid #26A69A"
+                          _hover={{ background: "#26A69A", color: "white" }}
                           mt="10px"
                           borderRadius="0"
                         >

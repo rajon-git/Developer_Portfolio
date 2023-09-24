@@ -40,12 +40,6 @@ export const html = {
     swid: "40%",
   };
   
-  export const chartjs = {
-    title: "Chart.js",
-    img: "https://www.richardwestenra.com/painting-with-data-talk/img/libs/recharts.png",
-    wid: "100%",
-    swid: "",
-  };
   
   export const node = {
     title: "Node.js",
@@ -75,28 +69,13 @@ export const html = {
     swid: "40%",
   };
   
-  export const nextjs = {
-    title: "Next.js",
-    img: "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
-    wid: "65%",
-    swid: "40%",
-  };
-  
   export const git = {
     title: "Git",
     img: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
     wid: "65%",
     swid: "40%",
   };
-  
-  export const typescript = {
-    title: "TypeScript",
-    img: "https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png",
-    wid: "65%",
-    swid: "40%",
-  };
-  
-  
+   
   export const python = {
     title:"Python",
     img:"https://img.freepik.com/free-icon/snakes_318-368381.jpg",

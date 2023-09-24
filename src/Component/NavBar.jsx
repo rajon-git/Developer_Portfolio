@@ -76,7 +76,7 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#4DB6AC" }}
             fontWeight="bolder"
-            color={activeSection === "home" ? "#ff641c" : "#ff651c"}
+            color={activeSection === "home" ? "#26A69A" : "#26A69A"}
           >
             <ScrollLink
               to="home"
@@ -91,7 +91,7 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#4DB6AC" }}
             fontWeight="bolder"
-            color={activeSection === "about" ? "#ff641c" : "#ff651c"}
+            color={activeSection === "about" ? "#26A69A" : "#26A69A"}
           >
             <ScrollLink
               to="about"
@@ -106,7 +106,7 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#4DB6AC" }}
             fontWeight="bolder"
-            color={activeSection === "about" ? "#4DB6AC" : "#ff651c"}
+            color={activeSection === "about" ? "#26A69A" : "#26A69A"}
           >
             <ScrollLink
               to="education"
@@ -121,7 +121,7 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#4DB6AC" }}
             fontWeight="bolder"
-            color={activeSection === "skills" ? "#4DB6AC" : "#ff651c"}
+            color={activeSection === "skills" ? "#26A69A" : "#26A69A"}
           >
             <ScrollLink
               to="skills"
@@ -136,7 +136,7 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#4DB6AC" }}
             fontWeight="bolder"
-            color={activeSection === "projects" ? "#4DB6AC" : "#ff651c"}
+            color={activeSection === "projects" ? "#26A69A" : "#26A69A"}
           >
             <ScrollLink
               to="projects"
@@ -151,7 +151,7 @@ export const NavBar = () => {
             p="5px 15px"
             _hover={{ color: "#4DB6AC" }}
             fontWeight="bolder"
-            color={activeSection === "contact" ? "#4DB6AC" : "#ff651c"}
+            color={activeSection === "contact" ? "#26A69A" : "#26A69A"}
           >
             <ScrollLink
               to="contact"
@@ -216,7 +216,7 @@ export const NavBar = () => {
             </Box>
             <Box
               p="5px 15px"
-              bg="#ff431c"
+              bg="#26A69A"
               color="white"
               fontWeight="bolder"
               m="10px 0"
@@ -232,7 +232,7 @@ export const NavBar = () => {
             </Box>
             <Box
               p="5px 15px"
-              bg="#ff431c"
+              bg="#26A69A"
               color="white"
               fontWeight="bolder"
               m="10px 0"
@@ -248,7 +248,7 @@ export const NavBar = () => {
             </Box>
             <Box
               p="5px 15px"
-              bg="#ff431c"
+              bg="#26A69A"
               color="white"
               fontWeight="bolder"
               m="10px 0"
@@ -264,7 +264,7 @@ export const NavBar = () => {
             </Box>
             <Box
               p="5px 15px"
-              bg="#ff431c"
+              bg="#26A69A"
               color="white"
               fontWeight="bolder"
               m="10px 0"
@@ -280,7 +280,7 @@ export const NavBar = () => {
             </Box>
             <Box
               p="5px 15px"
-              bg="#ff431c"
+              bg="#26A69A"
               color="white"
               fontWeight="bolder"
               m="10px 0"
