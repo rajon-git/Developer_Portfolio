@@ -28,7 +28,7 @@ export const ProjectList = [
     img: Inventory,
     title: "Inventory Management",
     description:
-      "User Authentication and authorization. • Admin Dashboard. Protected Routes. Data loading for server. The Inventory-Management System has helped Businesses, reduce their workload and improve their Inventory management processes.",
+      "User Authentication and authorization. Admin Dashboard. Protected Routes. Data loading for server. The Inventory-Management System has helped Businesses, reduce their workload and improve their Inventory management processes.",
     techStack: [html, css, react, redux,node,express,mongodb],
     liveLink: "#",
     gitLink: "https://github.com/rajon-git/Inventory-Management-Frontend",
