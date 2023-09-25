@@ -1,5 +1,6 @@
 import {
   chakra,
+  html,
   css,
   express,
   javascript,
@@ -9,16 +10,27 @@ import {
   redux,
 } from "./techstack";
 import Capture from "./../Banner/Capture.PNG";
+import Inventory from "./../Banner/Inventory.png";
 
 export const ProjectList = [
   {
-    heading: "SPARTAN",
-    img: "https://raw.githubusercontent.com/SumatM/Spartan/main/readmeImages/Screenshot%20(504).png",
-    title: "Charles Tyrwhitt Clone",
+    heading: "Task Manager",
+    img: Capture,
+    title: "Task Manager",
     description:
-      "Spartan is a website dedicated to men's fashion, with a focus on formal wear. The website provides a platform for customers to create their own customized clothing, allowing them to tailor their clothing to fit their unique style and preferences.",
-    techStack: [react, chakra, javascript, css],
-    liveLink: "https://marvelous-crack-5191.vercel.app/",
-    gitLink: "https://github.com/SumatM/Spartan",
+      "User Authentication and authorization. Responsive for all devices. Protected Routes. MERN Crud operations. Data loading for server. It’s allow users to track tasks and deadlines.",
+    techStack: [html, css, react, redux,node,express,mongodb],
+    liveLink: "https://taskmanagerfrontend-rajon.netlify.app/",
+    gitLink: "https://github.com/rajon-git/TaskManagerFrontend",
+  },
+  {
+    heading: "Inventory Management",
+    img: Inventory,
+    title: "Inventory Management",
+    description:
+      "User Authentication and authorization. • Admin Dashboard. Protected Routes. Data loading for server. The Inventory-Management System has helped Businesses, reduce their workload and improve their Inventory management processes.",
+    techStack: [html, css, react, redux,node,express,mongodb],
+    liveLink: "#",
+    gitLink: "https://github.com/rajon-git/Inventory-Management-Frontend",
   },
 ];
