@@ -30,7 +30,7 @@ export const ProjectList = [
     description:
       "User Authentication and authorization. Admin Dashboard. Protected Routes. Data loading for server. The Inventory-Management System has helped Businesses, reduce their workload and improve their Inventory management processes.",
     techStack: [html, css, react, redux,node,express,mongodb],
-    liveLink: "#",
+    liveLink: "https://inventory-management-frontend-pied.vercel.app/login",
     gitLink: "https://github.com/rajon-git/Inventory-Management-Frontend",
   },
 ];
