@@ -1,12 +1,9 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Flex, Heading } from '@chakra-ui/react';
 import GitHubCalendar from 'react-github-calendar';
-import explicitTheme from 'react-github-calendar'
-import { ThemeContext } from "./ThemeContext";
 import axios from 'axios';
 
 export default function GitCalendar() {
-  
   const [contributions, setContributions] = useState([]);
   const githubUsername = "rajon-git";
 
@@ -19,11 +16,11 @@ export default function GitCalendar() {
       const response = await axios.get(
         `https://api.github.com/users/${githubUsername}/events`
       );
-      console.log("Event Data:", response.data); // Log the event data
+      console.log("Event Data:", response.data);
       const eventData = response.data.filter(
         (event) => event.type === "PushEvent"
       );
-      console.log("Filtered Contributions:", eventData); // Log the contributions after filtering
+      console.log("Filtered Contributions:", eventData);
       setContributions(selectLastHalfYear(eventData));
     } catch (error) {
       console.error("Error fetching GitHub data:", error);
@@ -56,9 +53,10 @@ export default function GitCalendar() {
       <Box p="40px 20px" w="97%" m="auto" textAlign="center">
         <Flex
           justify="center"
-          p="45px"
+          p={{ base: "15px", sm: "1px" }} // Responsive padding
           className="react-activity-calendar"
           color="#26A69A"
+          
         >
           <GitHubCalendar
             style={{ width: "100%" }}
@@ -71,26 +69,30 @@ export default function GitCalendar() {
           />
         </Flex>
         <Flex
-          mt="40px"
+          mt="30px"
           flexDirection={{
             base: "column",
             sm: "column",
-            md: "column",
-            lg: "row",
+            md: "row", // Adjust the layout for larger screens
           }}
           justifyContent="space-around"
           alignItems="center"
-          gap="25px"
+          gap={{ base: "10px", sm: "15px" }} // Responsive gap
         >
-          <Box boxShadow="0px 3px 6px rgba(38, 166, 154, 0.5)">
+          <Box
+            boxShadow="0px 3px 6px rgba(38, 166, 154, 0.5)"
+            mb={{ base: "40px", sm: "0" }} // Adjust margin for smaller screens
+          >
             <img
               display="block"
               id="github-stats-card"
-              src={`https://github-readme-stats.vercel.app/api?username=${githubUsername}`}
+              src={`https://github-readme-stats.vercel.app/api?username=${githubUsername}&custom_title=GitHub%20Streak%20Stats&show_icons=true&theme=white`}
               alt="GitHub Stats"
             />
           </Box>
-          <Box boxShadow="0px 3px 6px rgba(38, 166, 154, 0.5)">
+          <Box
+            boxShadow="0px 3px 6px rgba(38, 166, 154, 0.5)"
+          >
             <img
               style={{ display: "block" }}
               id="github-streak-stats"
@@ -107,11 +109,10 @@ export default function GitCalendar() {
           }}
         >
           <Flex
-            w="22%"
-            boxShadow="0px 3px 6px rgba(38, 166, 154, 0.5)"
-            mt="40px"
+            w="100%" // Expand to full width
             justifyContent="center"
             alignItems="center"
+            mt="15px"
           >
             <img
               display="block"
