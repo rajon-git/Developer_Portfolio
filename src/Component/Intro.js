@@ -192,8 +192,6 @@ export default function Intro() {
               </Box>
             </motion.div>
           </Flex>
-
-          {/* About Me */}
         </Flex>
       </Box>
     </motion.div>

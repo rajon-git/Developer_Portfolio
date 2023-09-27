@@ -22,13 +22,13 @@ export default function About() {
         className="section about"
         w={{ base: "90%", sm: "75%", md: "50%" }}
         p="10px"
-       
         m="auto"
         borderTop="1.5px solid #26A69A"
         flexDirection="column"
         justify="center"
         align="center"
         textAlign="center"
+        mt="-40px"
       >
         <Flex mt="20px" w={{ base: "100%", sm: "70%", md: "80%", lg: "50%" }}>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
