@@ -14,7 +14,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { IoMdCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillFacebook } from "react-icons/ai";
 import { ThemeContext } from "./ThemeContext";
 import { useContext, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
@@ -238,6 +238,32 @@ export default function Footer() {
                     letterSpacing="0.8px"
                   >
                     rajon-git
+                  </Text>
+                </a>
+              </motion.div>
+            </Flex>
+            <Flex mt="25px">
+              <Box w="10%">
+                <a target="_blank" href="https://www.facebook.com/zhsust.rajon">
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ width: "10%" }}
+                  >
+                    <AiFillFacebook color="#26A69A" size="25px" />
+                  </motion.div>
+                </a>
+              </Box>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <a target="_blank" href="https://www.facebook.com/zhsust.rajon">
+                  <Text
+                    id="contact-facebook"
+                    fontSize="sm"
+                    color="#26A69A"
+                    fontWeight="500"
+                    letterSpacing="0.8px"
+                  >
+                    Md. Rajon Ahamad
                   </Text>
                 </a>
               </motion.div>
