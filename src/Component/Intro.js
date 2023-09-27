@@ -172,7 +172,7 @@ export default function Intro() {
               <Box mt="15px">
                 <Text
                   fontWeight="500"
-                  fontSize="55px"
+                  fontSize={{ base: "lg", sm: "2xl", md: "3xl" }}
                   display="inline"
                   color="#26A69A"
                   id="user-detail-name"

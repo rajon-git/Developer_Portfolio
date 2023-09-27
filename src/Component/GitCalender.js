@@ -45,21 +45,21 @@ export default function GitCalendar() {
   };
 
   return (
-    <Box pt="25px" textAlign="center">
+    <Box pt="25px" textAlign="center" style={{ lineHeight: "1.2" }}>
       <Box w="80%" margin="auto" borderTop="1.5px solid #26A69A"></Box>
       <Heading p="25px" color="#26A69A" size="2xl">
         GitHub
       </Heading>
-      <Box p="40px 20px" w="97%" m="auto" textAlign="center">
+      <Box p="10px 10px" w="95%" m="auto"  textAlign="center">
         <Flex
           justify="center"
-          p={{ base: "15px", sm: "1px" }} // Responsive padding
+          // Responsive padding
           className="react-activity-calendar"
           color="#26A69A"
           
         >
           <GitHubCalendar
-            style={{ width: "100%" }}
+            style={{ width: "100%"}}
             username="rajon-git"
             blockSize={20}
             blockMargin={10}
@@ -69,7 +69,7 @@ export default function GitCalendar() {
           />
         </Flex>
         <Flex
-          mt="30px"
+          mt="20px"
           flexDirection={{
             base: "column",
             sm: "column",
@@ -81,7 +81,7 @@ export default function GitCalendar() {
         >
           <Box
             boxShadow="0px 3px 6px rgba(38, 166, 154, 0.5)"
-            mb={{ base: "40px", sm: "0" }} // Adjust margin for smaller screens
+            mb={{ base: "20px", sm: "0" }} // Adjust margin for smaller screens
           >
             <img
               display="block"
@@ -112,7 +112,10 @@ export default function GitCalendar() {
             w="100%" // Expand to full width
             justifyContent="center"
             alignItems="center"
-            mt="15px"
+            mt="20px"
+          >
+            <Box
+            boxShadow="0px 3px 6px rgba(38, 166, 154, 0.5)"
           >
             <img
               display="block"
@@ -120,6 +123,7 @@ export default function GitCalendar() {
               src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${githubUsername}`}
               alt="GitHub Top Languages"
             />
+            </Box>
           </Flex>
         </div>
       </Box>
