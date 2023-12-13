@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import imgOlive from './../Banner/rajon.jpg'
-import resume from './../Banner/RAJON_MERN.pdf'
+import resume from './../Banner/MD_RAJON_AHAMAD_SHARIATPUR_CSE.pdf'
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
