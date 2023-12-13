@@ -1,22 +1,20 @@
 import {
   Box,
   Text,
-  Button,
   Flex,
-  Image,
   Popover,
   PopoverTrigger,
   PopoverContent,
   PopoverBody,
-  Link,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { MdEmail } from "react-icons/md";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin  } from "react-icons/ai";
 import { GiHeraldicSun } from "react-icons/gi";
-import { SiCodeforces } from "react-icons/si";
+import { SiCodeforces, SiLeetcode } from "react-icons/si";
+
 
 export default function Intro() {
   const theme = useContext(ThemeContext);
@@ -150,6 +148,16 @@ export default function Intro() {
               <Box w="10%">
                 <a target="_blank" href="https://codeforces.com/profile/hacker_04">
                   <SiCodeforces color="#26A69A" size="25px" />
+                </a>
+              </Box>
+            </Flex>
+          </motion.div>
+
+          <motion.div variants={item}>
+            <Flex mt="25px">
+              <Box w="10%">
+                <a target="_blank" href="https://leetcode.com/rajon_bd/">
+                <SiLeetcode color="#26A69A" size="25px" />
                 </a>
               </Box>
             </Flex>

@@ -58,9 +58,9 @@ export default function About() {
             textAlign="justify"
           >
             An Aspiring Full Stack Web Developer with a passion for MERN Stack
-            development and proficiency in HTML, CSS, JavaScript, React, Redux.js, Node.js , MongoDB , Express.js
+            development and proficiency in C, C++, HTML, CSS, JavaScript, React, Redux.js, Node.js , MongoDB , Express.js
             and ChakraUI is seeking opportunities to work in organizations that
-            can challenge their abilities as a web developer. They are eager to
+            can challenge their abilities as a web developer.Also familiar with Python, Django, Wordpress. They are eager to
             undertake challenging projects and deliver exceptional results
           </Text>
         </Box>
@@ -81,7 +81,7 @@ export default function About() {
               id="resume-button-2"
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1T9G2fuTCwho3SxRoxC2EYri_tTtJ1t1k/view?usp=share_link"
+                  "https://drive.google.com/file/d/1FrZQXPZDHH6OKnmcct8K6JJyQF_7h4Aj/view?usp=sharing"
                 )
               }
             >
