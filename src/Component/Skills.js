@@ -83,7 +83,8 @@ export default function Skills() {
                   <img
                     className="skills-card-img"
                     style={{ width: skill.swid }}
-                    src={skill.img}
+                    src={skill.img} 
+                    alt="skills"
                   />
                 </Flex>
                 <Box alignContent="center" p="15px">

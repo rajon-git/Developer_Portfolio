@@ -114,7 +114,7 @@ export default function Intro() {
         >
           <motion.div variants={item}>
             <Flex mt="15px" justify="start">
-              <a target="_blank" href="mailto:rajon.zhsust15@gmail.com">
+              <a href="mailto:rajon.zhsust15@gmail.com">
                 <MdEmail color="#26A69A" size="25px" />
               </a>
             </Flex>
@@ -124,7 +124,6 @@ export default function Intro() {
             <Flex mt="25px">
               <Box w="10%">
                 <a
-                  target="_blank"
                   href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/"
                 >
                   <AiFillLinkedin color="#26A69A" size="25px" />
@@ -136,7 +135,7 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a target="_blank" href="https://github.com/rajon-git">
+                <a href="https://github.com/rajon-git">
                   <AiFillGithub color="#26A69A" size="25px" />
                 </a>
               </Box>
@@ -146,7 +145,7 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a target="_blank" href="https://codeforces.com/profile/hacker_04">
+                <a href="https://codeforces.com/profile/hacker_04">
                   <SiCodeforces color="#26A69A" size="25px" />
                 </a>
               </Box>
@@ -156,7 +155,7 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a target="_blank" href="https://leetcode.com/rajon_bd/">
+                <a href="https://leetcode.com/rajon_bd/">
                 <SiLeetcode color="#26A69A" size="25px" />
                 </a>
               </Box>

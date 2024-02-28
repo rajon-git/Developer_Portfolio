@@ -1,9 +1,7 @@
 import {
-  chakra,
   html,
   css,
   express,
-  javascript,
   mongodb,
   node,
   react,
@@ -20,7 +18,7 @@ export const ProjectList = [
     description:
       "User Authentication and authorization. Responsive for all devices. Protected Routes. MERN Crud operations. Data loading for server. It’s allow users to track tasks and deadlines.",
     techStack: [html, css, react, redux,node,express,mongodb],
-    liveLink: "https://taskmanagerfrontend-rajon.netlify.app/",
+    liveLink: "https://taskmanager-rajon.netlify.app/",
     gitLink: "https://github.com/rajon-git/TaskManagerFrontend",
   },
   {
