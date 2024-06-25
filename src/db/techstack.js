@@ -2,6 +2,8 @@ import c from "./../Banner/c.png"
 import Mysql from "./../Banner/Mysql.png"
 import cPlus from "./../Banner/cPlus.png"
 import django from "./../Banner/django.png"
+import bootstrap from "./../Banner/bootstrap-stack.png"
+
 export const html = {
     title: "HTML",
     img: "https://cdn-icons-png.flaticon.com/512/1532/1532556.png",
@@ -110,6 +112,13 @@ export const html = {
   export const mysql = {
     title:"MySql",
     img:Mysql,
+    wid: "70%",
+    swid: "40%",
+  }
+
+  export const Bootstrap = {
+    title:"Bootstrap",
+    img:bootstrap,
     wid: "70%",
     swid: "40%",
   }

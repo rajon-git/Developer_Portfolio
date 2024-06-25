@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Grid,
-  Heading,
-  Text,
-
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, Heading, Text } from "@chakra-ui/react";
 import { ThemeContext } from "./ThemeContext";
 import { useContext, useRef } from "react";
 import { ProjectList } from "../db/projectdb";
@@ -27,9 +19,9 @@ export default function Project() {
       <Box w="80%" margin="auto" borderTop="1.5px solid #26A69A">
         {/* box 1 for main projects  */}
       </Box>
-      <Box m="auto" textAlign="center">
+      <Box m="auto" textAlign="center" w="80%">
         <Box pt="55px">
-          <Heading color="#26A69A" size="2xl">
+          <Heading color="#26A69A" size="xl">
             PROJECTS
           </Heading>
         </Box>
@@ -56,7 +48,7 @@ export default function Project() {
                 <Box>
                   <Heading
                     p="15px 0"
-                    size="lg"
+                    fontSize="20px"
                     color="#26A69A"
                     className="project-title"
                   >
@@ -67,20 +59,21 @@ export default function Project() {
 
                 <Box w={{ base: "105%", sm: "100%" }}>
                   <Link to={project.liveLink} target="_blank">
-                    <img style={{ width: "100%" }} src={project.img} alt="project"/>
+                    <img
+                      style={{ width: "100%" }}
+                      src={project.img}
+                      alt="project"
+                    />
                   </Link>
                 </Box>
                 <Box p="15px 0">
-                  <Text fontWeight="bold" m="5px 0" color="#26A69A">
-                    {project.title}
-                  </Text>
                   <Box w="60%" borderTop="1.5px solid #00796B"></Box>
                   <Text
                     color={mainTheme.theme.dText}
                     className="project-description"
-                  >
-                    {project.description}
-                  </Text>
+                    style={{ marginLeft: "20px" }}
+                    dangerouslySetInnerHTML={{ __html: project.description }}
+                  />
                 </Box>
                 {/* tech Stack */}
                 <Box className="project-tech-stack">
@@ -103,7 +96,11 @@ export default function Project() {
                       return (
                         <Box>
                           <Flex justifyContent="center">
-                            <img src={tech.img} style={{ width: tech.wid }} alt="tech"/>
+                            <img
+                              src={tech.img}
+                              style={{ width: tech.wid }}
+                              alt="tech"
+                            />
                           </Flex>
                         </Box>
                       );
@@ -115,7 +112,7 @@ export default function Project() {
                 <Box m="15px 0">
                   <Flex justify="space-around">
                     <Box>
-                      <a href={project.gitLink}>
+                      <a href={project.gitLink} target="_blank">
                         <Button
                           className="project-github-link"
                           background="none"
@@ -130,7 +127,7 @@ export default function Project() {
                       </a>
                     </Box>
                     <Box>
-                      <a href={project.liveLink}>
+                      <a href={project.liveLink} target="_blank">
                         <Button
                           className="project-deployed-link"
                           background="none"

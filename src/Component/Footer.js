@@ -60,7 +60,9 @@ export default function Footer() {
           )
           .then(
             function (response) {
-              alert("Thank you for showing interest in my profile. I'll contact you soon.");
+              alert(
+                "Thank you for showing interest in my profile. I'll contact you soon."
+              );
               setFrom({
                 name: "",
                 email: "",
@@ -107,7 +109,7 @@ export default function Footer() {
     <Box textAlign="center" p="15px" bg={mainTheme.theme.bg} id="contact">
       <Box w="80%" margin="auto" borderTop="1.5px solid #26A69A"></Box>
       {/*------- footer containter=------ */}
-      <Box p="40px 20px" m="auto" textAlign="center">
+      <Box p="40px 20px" m="auto" textAlign="center" w="85%">
         <Box>
           <Heading color="#26A69A">Contact Me</Heading>
         </Box>
@@ -170,7 +172,7 @@ export default function Footer() {
                 <MdEmail color="#26A69A" size="25px" />
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <a href="mailto:rajon.zhsust15@gmail.com">
+                <a href="mailto:rajon.zhsust15@gmail.com" target="_blank">
                   <Text
                     fontSize="sm"
                     color="#26A69A"
@@ -188,6 +190,7 @@ export default function Footer() {
               <Box w="10%">
                 <a
                   href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/"
+                  target="_blank"
                 >
                   <motion.div
                     whileHover={{ scale: 1.1 }}
@@ -201,6 +204,7 @@ export default function Footer() {
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <a
                   href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/"
+                  target="_blank"
                 >
                   <Text
                     id="contact-linkedin"
@@ -217,7 +221,7 @@ export default function Footer() {
             {/* github */}
             <Flex mt="25px">
               <Box w="10%">
-                <a href="https://github.com/rajon-git">
+                <a href="https://github.com/rajon-git" target="_blank">
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -228,7 +232,7 @@ export default function Footer() {
                 </a>
               </Box>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <a href="https://github.com/rajon-git">
+                <a href="https://github.com/rajon-git" target="_blank">
                   <Text
                     id="contact-github"
                     fontSize="sm"
@@ -244,7 +248,7 @@ export default function Footer() {
             {/* facebook */}
             <Flex mt="25px">
               <Box w="10%">
-                <a href="https://www.facebook.com/zhsust.rajon">
+                <a href="https://www.facebook.com/zhsust.rajon" target="_blank">
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -255,7 +259,7 @@ export default function Footer() {
                 </a>
               </Box>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <a href="https://www.facebook.com/zhsust.rajon">
+                <a href="https://www.facebook.com/zhsust.rajon" target="_blank">
                   <Text
                     id="contact-facebook"
                     fontSize="sm"
@@ -271,7 +275,10 @@ export default function Footer() {
             {/* codeforces */}
             <Flex mt="25px">
               <Box w="10%">
-                <a href="https://codeforces.com/profile/hacker_04">
+                <a
+                  href="https://codeforces.com/profile/hacker_04"
+                  target="_blank"
+                >
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -282,7 +289,10 @@ export default function Footer() {
                 </a>
               </Box>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <a href="https://codeforces.com/profile/hacker_04">
+                <a
+                  href="https://codeforces.com/profile/hacker_04"
+                  target="_blank"
+                >
                   <Text
                     id="contact-facebook"
                     fontSize="sm"
@@ -299,7 +309,7 @@ export default function Footer() {
             {/* leetcode */}
             <Flex mt="25px">
               <Box w="10%">
-                <a href="https://leetcode.com/rajon_bd/">
+                <a href="https://leetcode.com/rajon_bd/" target="_blank">
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -310,7 +320,7 @@ export default function Footer() {
                 </a>
               </Box>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <a href="https://leetcode.com/rajon_bd/">
+                <a href="https://leetcode.com/rajon_bd/" target="_blank">
                   <Text
                     id="contact-facebook"
                     fontSize="sm"
@@ -370,7 +380,6 @@ export default function Footer() {
                   name="number"
                   onChange={handleinput}
                   value={form.number}
-                  
                 />
               </Flex>
               {/* message  */}
@@ -411,7 +420,7 @@ export default function Footer() {
             size="35px"
             color="#26A69A"
           />
-          <Text color="#26A69A" fontWeight="bold">
+          <Text className="cursor" color="#26A69A" fontWeight="bold">
             Top
           </Text>
         </Flex>

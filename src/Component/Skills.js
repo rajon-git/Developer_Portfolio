@@ -18,7 +18,8 @@ import {
   C,
   cplus,
   Django,
-  mysql
+  mysql,
+  Bootstrap
 
 } from "../db/techstack";
 
@@ -41,7 +42,8 @@ export default function Skills() {
     C,
     cplus,
     Django,
-    mysql
+    mysql,
+    Bootstrap
   ];
 
   return (
@@ -55,7 +57,7 @@ export default function Skills() {
 
       <Box textAlign="center" margin="auto" p={{ base: "25px" }}>
         <Box p="35px">
-          <Heading color="#26A69A">SKILLS</Heading>
+          <Heading color="#26A69A">SOFT SKILLS</Heading>
         </Box>
         <Grid
           gap={{ base: "15px", sm: "10px", md: "25px", lg: "25px" }}
@@ -63,10 +65,10 @@ export default function Skills() {
             base: "repeat(2,1fr)",
             sm: "repeat(3,1fr)",
             md: "repeat(4,1fr)",
-            lg: "repeat(5,1fr)",
+            lg: "repeat(8,1fr)",
           }}
           m="auto"
-          w={{ base: "100%", sm: "100%", md: "100%", lg: "77%" }}
+          w={{ base: "100%", sm: "100%", md: "100%", lg: "80%" }}
         >
           {skills?.map((skill) => {
             return (
@@ -74,12 +76,12 @@ export default function Skills() {
                 style={{ background: "transparent" }}
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: "0px 3px 6px rgba(38, 166, 154, 0.5)",
+                  boxShadow: "0px 3px 6px rgba(38, 150, 154, 0.5)",
                   background: mainTheme.theme.hover,
                 }}
                 className="skills-card"
               >
-                <Flex justifyContent="center">
+                <Flex justifyContent="center" alignItems="center">
                   <img
                     className="skills-card-img"
                     style={{ width: skill.swid }}
@@ -87,9 +89,9 @@ export default function Skills() {
                     alt="skills"
                   />
                 </Flex>
-                <Box alignContent="center" p="15px">
+                <Box alignContent="center" p="10px">
                   <Heading
-                    size="md"
+                    size="sm"
                     color="#71797E"
                     className="skills-card-name"
                   >

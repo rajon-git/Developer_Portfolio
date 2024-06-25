@@ -57,15 +57,16 @@ export const NavBar = () => {
         pb="10px"
         top="5px"
         position="fixed"
-        left="20%"
+        // left="20%"
+        left="15%"
         display={{ base: "none", sm: "none", md: "none", lg: "inline-block" }}
         zIndex="99"
-        w="60%"
+        w="70%"
         m="auto"
         border="1px solid #26A69A"
         borderRadius="25px"
       >
-        <Flex w="70%" justify="space-between" letterSpacing="1px" m="auto">
+        <Flex w="82%" justify="space-between" letterSpacing="1px" m="auto">
           <Box
             p="5px 15px"
             _hover={{ color: "#FFBC9C" }}
@@ -97,11 +98,29 @@ export const NavBar = () => {
               <Text _hover={{cursor:'pointer'}} className="nav-link about">ABOUT</Text>
             </ScrollLink>
           </Box>
+
           <Box
             p="5px 15px"
             _hover={{ color: "#FFBC9C" }}
             fontWeight="bolder"
-            color={activeSection === "about" ? "#26A69A" : "#26A69A"}
+            color={activeSection === "experience" ? "#26A69A" : "#26A69A"}
+
+          >
+            <ScrollLink
+              to="experience"
+              smooth={true}
+              duration={500}
+              onClick={onClose}
+            >
+              <Text _hover={{cursor:'pointer'}} className="nav-link education">EXPERIENCE</Text>
+            </ScrollLink>
+          </Box>
+          
+          <Box
+            p="5px 15px"
+            _hover={{ color: "#FFBC9C" }}
+            fontWeight="bolder"
+            color={activeSection === "education" ? "#26A69A" : "#26A69A"}
 
           >
             <ScrollLink
@@ -113,6 +132,7 @@ export const NavBar = () => {
               <Text _hover={{cursor:'pointer'}} className="nav-link education">EDUCATION</Text>
             </ScrollLink>
           </Box>
+          
           <Box
             p="5px 15px"
             _hover={{ color: "#FFBC9C" }}
@@ -213,6 +233,7 @@ export const NavBar = () => {
                 <Text>HOME</Text>
               </ScrollLink>
             </Box>
+
             <Box
               p="5px 15px"
               bg="#26A69A"
@@ -229,6 +250,24 @@ export const NavBar = () => {
                 <Text>ABOUT</Text>
               </ScrollLink>
             </Box>
+
+            <Box
+              p="5px 15px"
+              bg="#26A69A"
+              color="white"
+              fontWeight="bolder"
+              m="10px 0"
+            >
+              <ScrollLink
+                to="experience"
+                smooth={true}
+                duration={500}
+                onClick={onClose}
+              >
+                <Text>EXPERIENCE</Text>
+              </ScrollLink>
+            </Box>
+
             <Box
               p="5px 15px"
               bg="#26A69A"
@@ -245,6 +284,8 @@ export const NavBar = () => {
                 <Text>EDUCATION</Text>
               </ScrollLink>
             </Box>
+            
+
             <Box
               p="5px 15px"
               bg="#26A69A"

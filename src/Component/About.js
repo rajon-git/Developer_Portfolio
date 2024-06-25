@@ -20,7 +20,7 @@ export default function About() {
       <Flex
         id="about"
         className="section about"
-        w={{ base: "90%", sm: "75%", md: "50%" }}
+        w={{ base: "90%", sm: "75%", md: "50%", lg:"70%" }}
         p="10px"
         m="auto"
         borderTop="1.5px solid #26A69A"
@@ -47,7 +47,7 @@ export default function About() {
             />
           </motion.div>
         </Flex>
-        <Heading color="#26A69A" mt="25px">
+        <Heading color="#26A69A" mt="20px">
           About Me
         </Heading>
         <Box mt="5px">

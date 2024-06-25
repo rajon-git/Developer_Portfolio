@@ -114,7 +114,7 @@ export default function Intro() {
         >
           <motion.div variants={item}>
             <Flex mt="15px" justify="start">
-              <a href="mailto:rajon.zhsust15@gmail.com">
+              <a href="mailto:rajon.zhsust15@gmail.com" target="_blank">
                 <MdEmail color="#26A69A" size="25px" />
               </a>
             </Flex>
@@ -124,7 +124,7 @@ export default function Intro() {
             <Flex mt="25px">
               <Box w="10%">
                 <a
-                  href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/"
+                  href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/" target="_blank"
                 >
                   <AiFillLinkedin color="#26A69A" size="25px" />
                 </a>
@@ -135,7 +135,7 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a href="https://github.com/rajon-git">
+                <a href="https://github.com/rajon-git" target="_blank">
                   <AiFillGithub color="#26A69A" size="25px" />
                 </a>
               </Box>
@@ -145,7 +145,7 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a href="https://codeforces.com/profile/hacker_04">
+                <a href="https://codeforces.com/profile/hacker_04" target="_blank">
                   <SiCodeforces color="#26A69A" size="25px" />
                 </a>
               </Box>
@@ -155,7 +155,7 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a href="https://leetcode.com/rajon_bd/">
+                <a href="https://leetcode.com/rajon_bd/" target="_blank">
                 <SiLeetcode color="#26A69A" size="25px" />
                 </a>
               </Box>
@@ -189,10 +189,10 @@ export default function Intro() {
             <motion.div variants={item}>
               <Box mt="15px">
                 <Text
-                  fontWeight="500"
+                  fontWeight="600"
                   fontSize={{ base: "lg", sm: "2xl", md: "3xl" }}
                   display="inline"
-                  color="#26A69A"
+                  color="#cc8360"
                   id="user-detail-name"
                   letterSpacing="2px"
                 >
@@ -204,9 +204,9 @@ export default function Intro() {
             <motion.div variants={item}>
               <Box mt="15px" color="#ff651c">
                 <img
-                  src="https://readme-typing-svg.demolab.com?weight=400&size=25&pause=1000&color=26A69A&background=FFFFFF00&center=true&vCenter=true&width=435&lines=A+Full+Stack+Web+Developer;A+Problem+Solver"
+                  src="https://readme-typing-svg.demolab.com?weight=400&size=25&pause=1000&color=26A69A&background=FFFFFF00&center=true&vCenter=true&width=435&lines=Software Engineer;Full+Stack+Web+Developer;Problem+Solver"
                   alt="Typing SVG"
-                />
+                /> 
               </Box>
             </motion.div>
           </Flex>

@@ -16,11 +16,10 @@ export default function GitCalendar() {
       const response = await axios.get(
         `https://api.github.com/users/${githubUsername}/events`
       );
-      console.log("Event Data:", response.data);
+      
       const eventData = response.data.filter(
         (event) => event.type === "PushEvent"
       );
-      console.log("Filtered Contributions:", eventData);
       setContributions(selectLastHalfYear(eventData));
     } catch (error) {
       console.error("Error fetching GitHub data:", error);
@@ -47,10 +46,10 @@ export default function GitCalendar() {
   return (
     <Box pt="25px" textAlign="center" style={{ lineHeight: "1.2" }}>
       <Box w="80%" margin="auto" borderTop="1.5px solid #26A69A"></Box>
-      <Heading p="25px" color="#26A69A" size="2xl">
+      <Heading p="25px" color="#26A69A" size="xl">
         GitHub
       </Heading>
-      <Box p="10px 10px" w="95%" m="auto"  textAlign="center">
+      <Box p="10px 10px" w="80%" m="auto"  textAlign="center">
         <Flex
           justify="center"
           // Responsive padding
