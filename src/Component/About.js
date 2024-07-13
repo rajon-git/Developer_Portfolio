@@ -56,19 +56,23 @@ export default function About() {
             letterSpacing="1px"
             color={theme.theme.dText}
             textAlign="justify"
-          >
-            An Aspiring Full Stack Web Developer with a passion for MERN Stack
-            development and proficiency in C, C++, HTML, CSS, JavaScript, React, Redux.js, Node.js , MongoDB , Express.js
-            and ChakraUI is seeking opportunities to work in organizations that
-            can challenge their abilities as a web developer.Also familiar with Python, Django, Wordpress. They are eager to
-            undertake challenging projects and deliver exceptional results
+          > 
+            As a dedicated software developer, I bring proficiency in leveraging the C, C++, JavaScript, 
+            Python, Reactjs, Django framework to build robust web applications. With a strong foundation 
+            in Python programming and a keen eye for scalable design, I am passionate about crafting 
+            efficient solutions that meet client needs and exceed expectations. My experience spans more than
+            2 years, during which I have collaborated effectively in agile environments, ensuring high 
+            standards of code quality and application performance. I am adept at translating complex 
+            requirements into clean, maintainable code while staying abreast of industry best practices 
+            and emerging technologies.
+
           </Text>
         </Box>
         <Box p="5px 15px" fontWeight="bolder" color="#26A69A">
           <Link
             href={resume}
             target="_blank"
-            download="MD_Rajon-Ahamad-Resume"
+            download="MD_Rajon-Ahamad-Shariatpur"
             id="resume-link-2"
           >
             <Button
@@ -81,7 +85,7 @@ export default function About() {
               id="resume-button-2"
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1FrZQXPZDHH6OKnmcct8K6JJyQF_7h4Aj/view?usp=sharing"
+                  "https://drive.google.com/file/d/1abpuDHEIiqOuMpQuBhtLgEfgJp0bAYya/view?usp=sharing"
                 )
               }
             >
