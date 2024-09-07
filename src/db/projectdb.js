@@ -6,11 +6,13 @@ import {
   node,
   react,
   redux,
-  Bootstrap
+  Bootstrap,
+  Django
 } from "./techstack";
 import Capture from "./../Banner/Capture.PNG";
 import Inventory from "./../Banner/Inventory.png";
 import jk_consultancy from "../Banner/jk_consultancy.png"
+import library_mng from "../Banner/library_mng.png"
 
 export const ProjectList = [
   {
@@ -58,5 +60,20 @@ export const ProjectList = [
     techStack: [html, css,Bootstrap, react, node, express],
     liveLink: "https://jkconsultancy.co/",
     gitLink: "#",
+  },
+  {
+    heading: "Library Management",
+    img: library_mng,
+    description: `
+      <ul>
+        <li>User Registration, Login,Logout</li>
+        <li>Admin Dashboard: Provide an interface for administrators to manage books, users, and system settings.</li>
+        <li>Admin can Add New Books, Update Book Information, Delete Books</li>
+        <li>Check Availability, Borrow Books, Return Books</li>
+        <li>Track Loans, Renew Loans</li>
+    `,
+    techStack: [html, css,Bootstrap, Django],
+    liveLink: "https://library-management-o36c.onrender.com/",
+    gitLink: "https://github.com/rajon-git/Library-Management",
   },
 ];
