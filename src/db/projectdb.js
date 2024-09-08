@@ -13,6 +13,7 @@ import Capture from "./../Banner/Capture.PNG";
 import Inventory from "./../Banner/Inventory.png";
 import jk_consultancy from "../Banner/jk_consultancy.png"
 import library_mng from "../Banner/library_mng.png"
+import ecom from "../Banner/MyShop.png"
 
 export const ProjectList = [
   {
@@ -75,5 +76,21 @@ export const ProjectList = [
     techStack: [html, css,Bootstrap, Django],
     liveLink: "https://library-management-o36c.onrender.com/",
     gitLink: "https://github.com/rajon-git/Library-Management",
+  },
+  {
+    heading: "MyShop Manage",
+    img: ecom,
+    description: `
+      <ul>
+        <li>User Authentication and authorization.</li>
+        <li>Admin Dashboard.</li>
+        <li>Protected Routes.</li>
+        <li>MERN Crud operations.</li>
+        <li>Data loading for server.</li>
+        <li>The System has helped Businesses, Exceptional Quality, Seamless Shopping Experience, Secure Checkout, Fast Shipping & Easy Returns.</li>
+    `,
+    techStack: [html, css, react, redux, node, express, mongodb],
+    liveLink: "https://dynamic-buttercream-91f103.netlify.app/",
+    gitLink: "https://github.com/rajon-git/MyShop_Mern_Front_User",
   },
 ];
