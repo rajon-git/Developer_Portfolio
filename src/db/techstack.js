@@ -3,6 +3,10 @@ import Mysql from "./../Banner/Mysql.png"
 import cPlus from "./../Banner/cPlus.png"
 import django from "./../Banner/django.png"
 import bootstrap from "./../Banner/bootstrap-stack.png"
+import djangoRest from "../drf.png"
+import odoo from "../odoo.avif"
+import psql from "../psql.svg"
+import sql from "../sql.png"
 
 export const html = {
     title: "HTML",
@@ -119,6 +123,34 @@ export const html = {
   export const Bootstrap = {
     title:"Bootstrap",
     img:bootstrap,
+    wid: "70%",
+    swid: "40%",
+  }
+
+  export const DjangoRest = {
+    title:"Django Rest",
+    img:djangoRest,
+    wid: "70%",
+    swid: "40%",
+  }
+
+  export const Odoo = {
+    title:"Odoo",
+    img:odoo,
+    wid: "70%",
+    swid: "40%",
+  }
+
+  export const SQL = {
+    title:"SQL",
+    img:sql,
+    wid: "70%",
+    swid: "40%",
+  }
+
+  export const Psql = {
+    title:"PostgreSQL",
+    img:psql,
     wid: "70%",
     swid: "40%",
   }

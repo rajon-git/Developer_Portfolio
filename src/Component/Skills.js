@@ -19,7 +19,11 @@ import {
   cplus,
   Django,
   mysql,
-  Bootstrap
+  Bootstrap,
+  DjangoRest,
+  Odoo,
+  SQL,
+  Psql
 
 } from "../db/techstack";
 
@@ -43,7 +47,11 @@ export default function Skills() {
     cplus,
     Django,
     mysql,
-    Bootstrap
+    Bootstrap,
+    DjangoRest,
+    Odoo,
+    SQL,
+    Psql
   ];
 
   return (
