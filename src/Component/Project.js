@@ -69,9 +69,10 @@ export default function Project() {
                 <Box p="15px 0">
                   <Box w="60%" borderTop="1.5px solid #00796B"></Box>
                   <Text
+                    textAlign="justify"
                     color={mainTheme.theme.dText}
                     className="project-description"
-                    style={{ marginLeft: "20px" }}
+                    style={{ marginLeft: "5px" }}
                     dangerouslySetInnerHTML={{ __html: project.description }}
                   />
                 </Box>
