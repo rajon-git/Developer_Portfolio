@@ -8,16 +8,32 @@ import {
   redux,
   Bootstrap,
   Django,
-  DjangoRest
+  DjangoRest,
+  Psql
 } from "./techstack";
-import Capture from "./../Banner/Capture.PNG";
 import Inventory from "./../Banner/Inventory.png";
 import jk_consultancy from "../Banner/jk_consultancy.png"
 import library_mng from "../Banner/library_mng.png"
 import ecom from "../Banner/MyShop.png"
 import house from "../Banner/houseHold.png"
+import DExpress from "../Banner/dExpress.JPG"
 
 export const ProjectList = [
+
+  {
+    heading: "Dhaka Express Global",
+    img: DExpress,
+    description: `
+        Allows users to create accounts, log in, and manage profiles.
+        Admin Dashboard.
+        Protected Routes.
+        Data loading for server.
+        The System has helped Businesses, Exceptional Quality, Seamless Shopping Experience, Secure Checkout, Fast Shipping & Easy Returns.
+    `,
+    techStack: [html, css, Bootstrap, Django, Psql],
+    liveLink: "https://dhakaexpressbd.net/",
+    gitLink: "#",
+  },
 
   {
     heading: "MyShop Manage",
@@ -26,7 +42,6 @@ export const ProjectList = [
         Allows users to create accounts, log in, and manage profiles.
         Admin Dashboard.
         Protected Routes.
-        MERN Crud operations.
         Data loading for server.
         The System has helped Businesses, Exceptional Quality, Seamless Shopping Experience, Secure Checkout, Fast Shipping & Easy Returns.
     `,
@@ -85,18 +100,6 @@ export const ProjectList = [
     techStack: [html, css,Bootstrap, Django],
     liveLink: "https://library-management-o36c.onrender.com/",
     gitLink: "https://github.com/rajon-git/Library-Management",
-  },
-  {
-    heading: "Task Manager",
-    img: Capture,
-    description: `
-  This application empowers users to create accounts, securely log in, and manage their profiles with ease. 
-  MERN stack CRUD operations enable robust and efficient data management. Provides real-time data loading from the server, allowing users to effectively track their tasks and 
-  boosting productivity.
-`,
-    techStack: [html, css, react, redux, node, express, mongodb],
-    liveLink: "https://taskmanager-rajon.netlify.app/",
-    gitLink: "https://github.com/rajon-git/TaskManagerFrontend",
-  },
+  }
   
 ];

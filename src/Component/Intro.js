@@ -114,7 +114,7 @@ export default function Intro() {
         >
           <motion.div variants={item}>
             <Flex mt="15px" justify="start">
-              <a href="mailto:rajon.zhsust15@gmail.com" target="_blank">
+              <a href="mailto:rajon.zhsust15@gmail.com" target="_blank"  rel="noopener noreferrer">
                 <MdEmail color="#26A69A" size="25px" />
               </a>
             </Flex>
@@ -124,8 +124,7 @@ export default function Intro() {
             <Flex mt="25px">
               <Box w="10%">
                 <a
-                  href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/" target="_blank"
-                >
+                  href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/" target="_blank"  rel="noopener noreferrer">
                   <AiFillLinkedin color="#26A69A" size="25px" />
                 </a>
               </Box>
@@ -135,7 +134,7 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a href="https://github.com/rajon-git" target="_blank">
+                <a href="https://github.com/rajon-git" target="_blank"  rel="noopener noreferrer">
                   <AiFillGithub color="#26A69A" size="25px" />
                 </a>
               </Box>
@@ -145,7 +144,7 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a href="https://codeforces.com/profile/hacker_04" target="_blank">
+                <a href="https://codeforces.com/profile/hacker_04" target="_blank"  rel="noopener noreferrer">
                   <SiCodeforces color="#26A69A" size="25px" />
                 </a>
               </Box>
@@ -155,7 +154,7 @@ export default function Intro() {
           <motion.div variants={item}>
             <Flex mt="25px">
               <Box w="10%">
-                <a href="https://leetcode.com/rajon_bd/" target="_blank">
+                <a href="https://leetcode.com/rajon_bd/" target="_blank"  rel="noopener noreferrer">
                 <SiLeetcode color="#26A69A" size="25px" />
                 </a>
               </Box>

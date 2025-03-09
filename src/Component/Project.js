@@ -58,7 +58,7 @@ export default function Project() {
                 <Box pb="25px" w="80%" borderTop="1.5px solid #00796B"></Box>
 
                 <Box w={{ base: "105%", sm: "100%" }}>
-                  <Link to={project.liveLink} target="_blank">
+                  <Link to={project.liveLink} target="_blank"  rel="noopener noreferrer">
                     <img
                       style={{ width: "100%" }}
                       src={project.img}
@@ -113,7 +113,7 @@ export default function Project() {
                 <Box m="15px 0">
                   <Flex justify="space-around">
                     <Box>
-                      <a href={project.gitLink} target="_blank">
+                      <a href={project.gitLink} target="_blank"  rel="noopener noreferrer">
                         <Button
                           className="project-github-link"
                           background="none"
@@ -128,7 +128,7 @@ export default function Project() {
                       </a>
                     </Box>
                     <Box>
-                      <a href={project.liveLink} target="_blank">
+                      <a href={project.liveLink} target="_blank"  rel="noopener noreferrer">
                         <Button
                           className="project-deployed-link"
                           background="none"
