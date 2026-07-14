@@ -1,156 +1,199 @@
-import c from "./../Banner/c.png"
-import Mysql from "./../Banner/Mysql.png"
-import cPlus from "./../Banner/cPlus.png"
-import django from "./../Banner/django.png"
-import bootstrap from "./../Banner/bootstrap-stack.png"
-import djangoRest from "../drf.png"
-import odoo from "../odoo.avif"
-import psql from "../psql.svg"
-import sql from "../sql.png"
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiBootstrap,
+  SiReact,
+  SiRedux,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiDjango,
+  SiPostgresql,
+  SiMysql,
+  SiRedis,
+  SiTailwindcss,
+  SiPython,
+  SiNginx,
+  SiGit,
+} from "react-icons/si";
+
+import {
+  FaBolt,
+  FaCode,
+  FaCubes,
+  FaDatabase,
+  FaLeaf,
+  FaLayerGroup,
+  FaServer,
+} from "react-icons/fa";
+
+/* =========================
+   Frontend
+========================= */
 
 export const html = {
-    title: "HTML",
-    img: "https://cdn-icons-png.flaticon.com/512/1532/1532556.png",
-    wid: "70%",
-    swid: "40%",
-  };
-  
-  export const css = {
-    title: "CSS",
-    img: "https://cdn4.iconfinder.com/data/icons/iconsimple-programming/512/css-512.png",
-    wid: "65%",
-    swid: "40%",
-  };
-  
-  export const javascript = {
-    title: "JavaScript",
-    img: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
-    wid: "60%",
-    swid: "40%",
-  };
-  
-  export const react = {
-    title: "React.js",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
-    wid: "75%",
-    swid: "40%",
-  };
-  
-  export const chakra = {
-    title: "Chakra UI",
-    img: "https://img.icons8.com/color/512/chakra-ui.png",
-    wid: "75%",
-    swid: "40%",
-  };
-  
-  export const redux = {
-    title: "Redux",
-    img: "https://cdn.iconscout.com/icon/free/png-256/free-redux-283024.png",
-    wid: "70%",
-    swid: "40%",
-  };
-  
-  
-  export const node = {
-    title: "Node.js",
-    img: "https://cdn-icons-png.flaticon.com/512/5968/5968322.png",
-    wid: "65%",
-    swid: "40%",
-  };
-  
-  export const mongodb = {
-    title: "MongoDB",
-    img: "https://devkico.itexto.com.br/wp-content/uploads/2013/10/mongodb-leaf-300x300.png",
-    wid: "65%",
-    swid: "40%",
-  };
-  
-  export const express = {
-    title: "Express",
-    img: "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
-    wid: "60%",
-    swid: "40%",
-  };
-  
-  export const tailwind = {
-    title: "Tailwind CSS",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
-    wid: "65%",
-    swid: "40%",
-  };
-  
-  export const git = {
-    title: "Git",
-    img: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
-    wid: "65%",
-    swid: "40%",
-  };
-  export const python = {
-    title:"Python",
-    img:"https://img.freepik.com/free-icon/snakes_318-368381.jpg",
-    wid: "70%",
-    swid: "40%",
-  };
+  name: "HTML",
+  Icon: SiHtml5,
+};
 
-  export const cplus = {
-    title:"C++",
-    img:cPlus,
-    wid: "70%",
-    swid: "40%",
-  };
+export const css = {
+  name: "CSS",
+  Icon: SiCss3,
+};
 
-  export const C = {
-    title:"C",
-    img:c,
-    wid: "70%",
-    swid: "40%",
-  };
+export const javascript = {
+  name: "JavaScript",
+  Icon: SiJavascript,
+};
 
-  export const Django = {
-    title:"django",
-    img:django,
-    wid: "70%",
-    swid: "40%",
-  }
+export const Bootstrap = {
+  name: "Bootstrap",
+  Icon: SiBootstrap,
+};
 
-  export const mysql = {
-    title:"MySql",
-    img:Mysql,
-    wid: "70%",
-    swid: "40%",
-  }
+export const react = {
+  name: "React.js",
+  Icon: SiReact,
+};
 
-  export const Bootstrap = {
-    title:"Bootstrap",
-    img:bootstrap,
-    wid: "70%",
-    swid: "40%",
-  }
+export const redux = {
+  name: "Redux",
+  Icon: SiRedux,
+};
 
-  export const DjangoRest = {
-    title:"Django Rest",
-    img:djangoRest,
-    wid: "70%",
-    swid: "40%",
-  }
+export const tailwind = {
+  name: "Tailwind CSS",
+  Icon: SiTailwindcss,
+};
 
-  export const Odoo = {
-    title:"Odoo",
-    img:odoo,
-    wid: "70%",
-    swid: "40%",
-  }
+export const chakra = {
+  name: "Chakra UI",
+  Icon: FaLayerGroup,
+};
 
-  export const SQL = {
-    title:"SQL",
-    img:sql,
-    wid: "70%",
-    swid: "40%",
-  }
+export const owl = {
+  name: "OWL JS",
+  Icon: FaCode,
+};
 
-  export const Psql = {
-    title:"PostgreSQL",
-    img:psql,
-    wid: "70%",
-    swid: "40%",
-  }
+/* =========================
+   Backend
+========================= */
+
+export const python = {
+  name: "Python",
+  Icon: SiPython,
+};
+
+export const Django = {
+  name: "Django",
+  Icon: SiDjango,
+};
+
+export const DjangoRest = {
+  name: "Django REST Framework",
+  Icon: SiDjango,
+};
+
+export const node = {
+  name: "Node.js",
+  Icon: SiNodedotjs,
+};
+
+export const express = {
+  name: "Express.js",
+  Icon: SiExpress,
+};
+
+export const odoo = {
+  name: "Odoo",
+  Icon: FaCubes,
+};
+
+export const Odoo = {
+  name: "Odoo",
+  Icon: FaCubes,
+};
+
+export const xml = {
+  name: "XML",
+  Icon: FaCode,
+};
+
+/* =========================
+   Database
+========================= */
+
+export const Psql = {
+  name: "PostgreSQL",
+  Icon: SiPostgresql,
+};
+
+export const mysql = {
+  name: "MySQL",
+  Icon: SiMysql,
+};
+
+export const mongodb = {
+  name: "MongoDB",
+  Icon: SiMongodb,
+};
+
+export const SQL = {
+  name: "SQL",
+  Icon: FaDatabase,
+};
+
+/* =========================
+   Infrastructure
+========================= */
+
+export const redis = {
+  name: "Redis",
+  Icon: SiRedis,
+};
+
+export const celery = {
+  name: "Celery",
+  Icon: FaLeaf,
+};
+
+export const websocket = {
+  name: "WebSocket",
+  Icon: FaBolt,
+};
+
+export const nginx = {
+  name: "Nginx",
+  Icon: SiNginx,
+};
+
+export const gunicorn = {
+  name: "Gunicorn",
+  Icon: FaServer,
+};
+
+export const vps = {
+  name: "VPS",
+  Icon: FaServer,
+};
+
+export const git = {
+  name: "Git",
+  Icon: SiGit,
+};
+
+/* =========================
+   Compatibility / Old Skills
+========================= */
+
+export const C = {
+  name: "C",
+  Icon: FaCode,
+};
+
+export const cplus = {
+  name: "C++",
+  Icon: FaCode,
+};

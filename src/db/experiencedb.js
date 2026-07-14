@@ -1,37 +1,84 @@
- 
-  export const ExperienceList = [
+export const ExperienceList = [
+  {
+    company: "Xsellence Bangladesh Ltd.",
+    role: "Software Developer",
+    location: "Banasree, Rampura, Dhaka",
+    period: "October 2025 - Present",
+    type: "Current",
+    responsibilities: [
+      "Develop and customize modules for Sonali Aansh Ltd., primarily focused on HRM and Purchase Management workflows.",
+      "Build custom features for The Daily Star Event Management System, including event booking, registration, workflow customization, access control, and security rules.",
+      "Develop and customize modules for Nadia Furniture, Ultima Bangladesh HRM, and Manufacturing BOM.",
+      "Develop and customize modules for Badamtoli Inventory and Sales workflow customization.",
+      "Develop and customize Parking Management and Education Management systems, including operational workflows, user access, reports, and business process automation.",
+      "Develop dashboards, dynamic reports, XML views, and OWL frontend components for business operations and management visibility.",
+    ],
+    skills: [
+      "Odoo",
+      "Python",
+      "OWL",
+      "XML",
+      "HRM",
+      "Purchase Management",
+      "Event Management",
+      "Access Control",
+      "Security Rules",
+      "Manufacturing BOM",
+      "Inventory",
+      "Sales Workflow",
+      "Dashboards",
+      "Dynamic Reports",
+    ],
+  },
 
-    {
-      heading: "Software Engineer",
-     
-      title: "TEX Fasteners",
-      address: "Adamjee Export Processing Zone, Plot No 180, 264, 273",
-      year: "June 2024 - Present",
-      description: `
-      <ul>
-        <li>Developed and maintained responsive websites using XML, CSS, and JavaScript, Python, Django ensuring cross-browser compatibility and mobile responsiveness.</li>
-        <li>Developed and customized Odoo modules to meet specific business requirements.</li>
-        <li>Implemented ERP solutions for seamless integration and enhanced operational efficiency.</li>
-        <li>Provided ongoing support and troubleshooting to ensure system stability and user satisfaction.</li>
-        
-    `
-    },
+  {
+    company: "TEX Fasteners",
+    role: "Software Developer",
+    location: "Adamjee Export Processing Zone, Narayanganj",
+    period: "June 2024 - October 2025",
+    type: "Full Time",
+    responsibilities: [
+      "Developed and maintained responsive web applications using Python, Django, JavaScript, XML, and Bootstrap.",
+      "Customized Odoo modules to meet business requirements across Sales, CRM, dashboards, reporting, and operational workflows.",
+      "Created JavaScript-based dashboards and business transaction reporting systems for dynamic data visualization.",
+      "Implemented ERP solutions to improve system integration, operational efficiency, stability, and user satisfaction.",
+      "Provided ongoing support, troubleshooting, and issue resolution for ERP users and internal stakeholders.",
+    ],
+    skills: [
+      "Python",
+      "Django",
+      "Odoo",
+      "JavaScript",
+      "Bootstrap",
+      "CRM",
+      "Sales",
+      "Dashboard",
+      "Reporting",
+    ],
+  },
 
-    {
-      heading: "Web Developer",
-      title: "Chartered skills Ltd.",
-      address: "752/2, Begum Rokeya Avenue, Mirpur, Dhaka",
-      year: "May 2023 - May 2024",
-      description:  `
-      <ul>
-        <li>Developed and maintained responsive websites using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and mobile responsiveness.</li>
-        <li>Implemented front-end frameworks such as React.js to enhance user interface and user experience.</li>
-        <li>Collaborated with design and marketing teams to translate wireframes and mockups into functional websites, ensuring alignment with brand guidelines and business objectives.</li>
-        <li>Integrated back-end APIs (e.g., Django, ExpressJS), Wordpress Web Application and databases (e.g., MySQL, MongoDB) to support dynamic content and user interaction.</li>
-        <li>Optimized website performance through code refactoring, image optimization, and caching techniques, resulting in a 30% improvement in page load times.</li>
-        <li>Documented technical specifications, user guides, and troubleshooting steps for internal and client reference.</li>
-    `
-    },
-    
-   
-  ];
+  {
+    company: "Chartered Skills Ltd.",
+    role: "Web Developer",
+    location: "Mirpur, Dhaka",
+    period: "May 2023 - May 2024",
+    type: "Full Time",
+    responsibilities: [
+      "Developed responsive websites using HTML, CSS, JavaScript, and React.js with cross-browser and mobile compatibility.",
+      "Translated wireframes and design mockups into functional web pages aligned with brand and business objectives.",
+      "Integrated backend APIs using Django and Express.js and connected databases including MySQL and MongoDB.",
+      "Supported WordPress web applications and dynamic content management requirements.",
+    ],
+    skills: [
+      "React.js",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Django",
+      "Express.js",
+      "MySQL",
+      "MongoDB",
+      "WordPress",
+    ],
+  },
+];
