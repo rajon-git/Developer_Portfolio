@@ -34,8 +34,8 @@ export default function About() {
 
   const highlights = [
     { value: "3.2+", label: "Years Experience" },
-    { value: "Odoo", label: "ERP Specialist" },
-    { value: "Full Stack", label: "Web Development" },
+    { value: "ERP", label: "ERP Development" },
+    { value: "Full Stack", label: "Software Development" },
     { value: "VPS", label: "Deployment Support" },
   ];
 
