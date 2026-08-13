@@ -1,196 +1,127 @@
-import { useState, useEffect, useRef } from "react";
-import {
-  Box,
-  Flex,
-  Text,
-  Drawer,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerBody,
-  useDisclosure,
-} from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { useEffect, useState } from "react";
+import { FiArrowUpRight, FiMenu, FiX } from "react-icons/fi";
 import { Link as ScrollLink } from "react-scroll";
 
-export const NavBar = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef();
-  const [activeSection, setActiveSection] = useState("about");
+const navItems = [
+  ["About", "about"],
+  ["Skills", "skills"],
+  ["Experience", "experience"],
+  ["Projects", "projects"],
+  ["Education", "education"],
+  ["GitHub", "github"],
+  ["Contact", "contact"],
+];
 
-  const menuItems = [
-    {
-      label: "ABOUT",
-      to: "about",
-      className: "about",
-    },
-    {
-      label: "EXPERIENCE",
-      to: "experience",
-      className: "experience",
-    },
-    {
-      label: "EDUCATION",
-      to: "education",
-      className: "education",
-    },
-    {
-      label: "PROJECTS",
-      to: "projects",
-      className: "projects",
-    },
-    {
-      label: "CONTACT",
-      to: "contact",
-      className: "contact",
-    },
-  ];
+export const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("about");
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = [
-        "about",
-        "experience",
-        "education",
-        "projects",
-        "contact",
-      ];
+      setScrolled(window.scrollY > 10);
+      const cursor = window.scrollY + 120;
+      let current = "about";
 
-      const scrollPosition = window.scrollY + 120;
-
-      let currentSection = "about";
-
-      sections.forEach((sectionId) => {
-        const section = document.getElementById(sectionId);
-
-        if (section && scrollPosition >= section.offsetTop) {
-          currentSection = sectionId;
-        }
+      navItems.forEach(([, id]) => {
+        const section = document.getElementById(id);
+        if (section && cursor >= section.offsetTop) current = id;
       });
 
-      setActiveSection(currentSection);
+      setActiveSection(current);
     };
 
     handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <Box id="nav-menu">
-      {/* Desktop Navbar */}
-      <Box
-        backdropFilter="auto"
-        backdropBlur="10px"
-        pt="5px"
-        pb="10px"
-        top="5px"
-        position="fixed"
-        left="15%"
-        display={{ base: "none", sm: "none", md: "none", lg: "inline-block" }}
-        zIndex="99"
-        w="70%"
-        m="auto"
-        border="1px solid #26A69A"
-        borderRadius="25px"
-        bg="rgba(255, 255, 255, 0.75)"
-      >
-        <Flex w="82%" justify="space-between" letterSpacing="1px" m="auto">
-          {menuItems.map((item) => (
-            <Box
-              key={item.to}
-              p="5px 15px"
-              fontWeight="bolder"
-              color={activeSection === item.to ? "#FFBC9C" : "#26A69A"}
-              _hover={{ color: "#FFBC9C" }}
-              transition="all 0.2s ease"
-            >
-              <ScrollLink
-                to={item.to}
-                smooth={true}
-                duration={500}
-                offset={-80}
-                onClick={onClose}
-              >
-                <Text
-                  _hover={{ cursor: "pointer" }}
-                  className={`nav-link ${item.className}`}
+    <header
+      className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl transition-all duration-300 ${
+        scrolled
+          ? "border-slate-200/90 bg-white/[0.92] shadow-[0_4px_24px_rgba(15,23,42,0.035)]"
+          : "border-transparent bg-slate-50/80"
+      }`}
+    >
+      <div className="section-shell flex h-16 items-center justify-between">
+        <ScrollLink to="about" smooth duration={420} offset={-68} className="cursor-pointer">
+          <div className="flex items-center gap-3">
+            <div className="flex h-9 w-9 items-center justify-center rounded-[11px] bg-slate-950 font-mono text-[12px] font-bold text-white shadow-sm transition-transform duration-200 hover:-translate-y-0.5">
+              RA
+            </div>
+            <div className="hidden sm:block">
+              <p className="text-[13px] font-bold leading-tight text-slate-950">Md. Rajon Ahamad</p>
+              <p className="mt-0.5 text-[10px] font-medium text-slate-500">Software Engineer</p>
+            </div>
+          </div>
+        </ScrollLink>
+
+        <nav className="hidden items-center lg:flex">
+          {navItems.map(([label, id]) => {
+            const active = activeSection === id;
+            return (
+              <ScrollLink key={id} to={id} smooth duration={420} offset={-64} className="cursor-pointer">
+                <span
+                  className={`relative block px-3 py-2 text-[12px] font-semibold transition-colors duration-200 ${
+                    active ? "text-slate-950" : "text-slate-500 hover:text-slate-950"
+                  }`}
                 >
-                  {item.label}
-                </Text>
+                  {label}
+                  <span
+                    className={`absolute bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-brand-600 transition-all duration-200 ${
+                      active ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
+                    }`}
+                  />
+                </span>
               </ScrollLink>
-            </Box>
-          ))}
-        </Flex>
-      </Box>
+            );
+          })}
+        </nav>
 
-      {/* Mobile Navbar */}
-      <Box
-        backdropFilter="auto"
-        backdropBlur="10px"
-        pt="5px"
-        pb="15px"
-        top="0px"
-        position="fixed"
-        w="100%"
-        display={{ base: "block", sm: "block", md: "block", lg: "none" }}
-        zIndex="99"
-        bg="rgba(255, 255, 255, 0.75)"
+        <div className="flex items-center gap-2">
+          <a
+            href="mailto:rajon.zhsust15@gmail.com"
+            className="hidden h-9 items-center gap-2 rounded-lg bg-slate-950 px-4 text-[12px] font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-slate-800 md:inline-flex"
+          >
+            Contact <FiArrowUpRight size={14} />
+          </a>
+          <button
+            type="button"
+            aria-label="Toggle navigation"
+            onClick={() => setIsOpen((value) => !value)}
+            className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 transition-colors hover:bg-slate-50 lg:hidden"
+          >
+            {isOpen ? <FiX size={19} /> : <FiMenu size={19} />}
+          </button>
+        </div>
+      </div>
+
+      <div
+        className={`overflow-hidden border-t border-slate-200 bg-white transition-all duration-300 lg:hidden ${
+          isOpen ? "max-h-[440px] opacity-100" : "max-h-0 border-transparent opacity-0"
+        }`}
       >
-        <Flex
-          w="92%"
-          m="auto"
-          textAlign="center"
-          justify="right"
-          align="center"
-          mt="10px"
-        >
-          <Box mr="10px" ref={btnRef} onClick={onOpen}>
-            <HamburgerIcon color="#00796B" fontSize="35px" />
-          </Box>
-        </Flex>
-      </Box>
-
-      {/* Mobile Drawer */}
-      <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
-        <DrawerOverlay />
-
-        <DrawerContent
-          mt={{ base: "12%", sm: "9%", md: "8%" }}
-          backdropFilter="auto"
-          backdropBlur="10px"
-          pt="5px"
-          bg="rgba(255, 255, 255, 0.92)"
-        >
-          <DrawerBody>
-            {menuItems.map((item) => (
-              <Box
-                key={item.to}
-                p="10px 15px"
-                bg={activeSection === item.to ? "#071A1C" : "#26A69A"}
-                color="white"
-                fontWeight="bolder"
-                m="10px 0"
-                borderRadius="10px"
-                transition="all 0.2s ease"
-              >
-                <ScrollLink
-                  to={item.to}
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                  onClick={onClose}
-                >
-                  <Text>{item.label}</Text>
-                </ScrollLink>
-              </Box>
-            ))}
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
-    </Box>
+        <nav className="section-shell flex flex-col gap-1 py-3">
+          {navItems.map(([label, id]) => (
+            <ScrollLink
+              key={id}
+              to={id}
+              smooth
+              duration={420}
+              offset={-64}
+              onClick={() => setIsOpen(false)}
+              className={`cursor-pointer rounded-lg px-3 py-2.5 text-[13px] font-semibold transition-colors ${
+                activeSection === id
+                  ? "bg-brand-50 text-brand-700"
+                  : "text-slate-600 hover:bg-slate-50 hover:text-slate-950"
+              }`}
+            >
+              {label}
+            </ScrollLink>
+          ))}
+        </nav>
+      </div>
+    </header>
   );
 };

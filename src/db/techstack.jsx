@@ -24,7 +24,6 @@ import {
   FaCubes,
   FaDatabase,
   FaLeaf,
-  FaLayerGroup,
   FaServer,
 } from "react-icons/fa";
 
@@ -67,10 +66,6 @@ export const tailwind = {
   Icon: SiTailwindcss,
 };
 
-export const chakra = {
-  name: "Chakra UI",
-  Icon: FaLayerGroup,
-};
 
 export const owl = {
   name: "OWL JS",

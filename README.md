@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Md. Rajon Ahamad — Software Engineer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive React portfolio focused on ERP engineering, backend development, production projects, technical skills, experience, and deployment work.
 
-## Available Scripts
+## UI stack
 
-In the project directory, you can run:
+- React 18
+- Tailwind CSS 3
+- Framer Motion
+- React Icons
+- React Scroll
+- React GitHub Calendar
+- EmailJS
 
-### `npm start`
+**Chakra UI is not used anywhere in this project.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Run locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+npm run dev
+```
 
-### `npm test`
+## Production build
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm run build
+```
 
-### `npm run build`
+## Add more projects
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Add project objects to:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```text
+src/db/projectdb.js
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The project section automatically handles category filters and pagination at 6 projects per page.
 
-### `npm run eject`
+## Tailwind files
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```text
+tailwind.config.js
+postcss.config.js
+src/index.css
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact form
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The existing EmailJS environment variables are preserved:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```text
+VITE_EMAILJS_SERVICE_ID
+VITE_EMAILJS_TEMPLATE_ID
+VITE_EMAILJS_PUBLIC_KEY
+```
 
-## Learn More
+## Clean install (important)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you previously installed dependencies from an older version, remove the old dependency tree first:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+rm -rf node_modules package-lock.json
+npm cache verify
+npm install
+npm run dev
+```
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The portfolio intentionally extends only `react-app` ESLint rules. It does not load `react-app/jest` because this project has no Jest test suite.

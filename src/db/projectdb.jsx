@@ -1,0 +1,92 @@
+import {
+  html,
+  react,
+  DjangoRest,
+  Psql,
+  mysql,
+  redis,
+  celery,
+  tailwind,
+  nginx,
+  gunicorn,
+  vps,
+  odoo,
+  python,
+  xml,
+  owl,
+  websocket,
+} from "./techstack";
+
+import specialBabyImg from "../Banner/specialBabyShopBD.png";
+import aurabellaImg from "../Banner/aurabella-admin.png";
+import dailyStarImg from "../Banner/odoo.png";
+import nadiaFurnitureImg from "../Banner/nadia-furniture.png";
+
+export const ProjectList = [
+  {
+    title: "Special Baby Shop BD",
+    featured: true,
+    subtitle: "E-commerce & Order Management",
+    category: "Full-stack Commerce",
+    group: "E-commerce",
+    img: specialBabyImg,
+    summary: "A production e-commerce platform covering storefront, order processing, inventory, payment, logistics, and administration workflows.",
+    highlights: [
+      "Built administration workflows for products, vendors, purchases, inventory, sales, orders, payments, shipping, and logistics.",
+      "Developed API-driven order, account, invoice, and inventory workflows across Django REST Framework and React.",
+      "Implemented Redis/Celery-backed processing and production deployment with Nginx, Gunicorn, and VPS infrastructure.",
+    ],
+    techStack: [DjangoRest, react, mysql, redis, celery, tailwind, html, nginx, gunicorn, vps],
+    liveLink: "https://specialbabyshopbd.com/",
+    gitLink: "#",
+  },
+  {
+    title: "Aurabella",
+    subtitle: "E-commerce, POS & Order Management",
+    category: "Retail Platform",
+    group: "Retail",
+    img: aurabellaImg,
+    summary: "An integrated retail platform combining e-commerce, point of sale, inventory, purchase, sales, and order administration.",
+    highlights: [
+      "Developed customer, order, invoice, purchase, sales, POS, and inventory-ledger workflows.",
+      "Built operational administration for products, vendors, payments, shipping, logistics, and stock movement.",
+      "Added WebSocket-based live notifications for order, sales, inventory, and admin activity.",
+    ],
+    techStack: [DjangoRest, react, mysql, redis, celery, websocket, tailwind, html],
+    liveLink: "#",
+    gitLink: "#",
+  },
+  {
+    title: "The Daily Star",
+    featured: true,
+    subtitle: "Event Management, Invoicing & Accounting",
+    category: "Odoo ERP",
+    group: "Odoo ERP",
+    img: dailyStarImg,
+    summary: "Custom Odoo ERP workflows for event booking, registration, approvals, invoicing, payments, accounting, and operational reporting.",
+    highlights: [
+      "Customized event booking, registration, approval, and operational tracking workflows.",
+      "Implemented role-based access control, security rules, invoicing, payment tracking, and accounting integration.",
+      "Built custom forms, list views, menus, actions, QWeb reports, and OWL-driven user interfaces.",
+    ],
+    techStack: [odoo, python, xml, owl, Psql],
+    liveLink: "#",
+    gitLink: "#",
+  },
+  {
+    title: "Nadia Furniture Ltd.",
+    subtitle: "HRM & Manufacturing BOM",
+    category: "Odoo ERP",
+    group: "Odoo ERP",
+    img: nadiaFurnitureImg,
+    summary: "ERP customization focused on HR operations and manufacturing BOM workflows for a furniture production environment.",
+    highlights: [
+      "Customized employee, attendance, leave, payroll, approval, and HR reporting workflows.",
+      "Developed BOM configuration for product components, materials, work centers, and production requirements.",
+      "Built custom views, access rights, security rules, and dynamic operational reports.",
+    ],
+    techStack: [odoo, python, xml, Psql],
+    liveLink: "#",
+    gitLink: "#",
+  },
+];
