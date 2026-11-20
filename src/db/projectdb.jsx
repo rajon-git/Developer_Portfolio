@@ -21,8 +21,26 @@ import specialBabyImg from "../Banner/specialBabyShopBD.png";
 import aurabellaImg from "../Banner/aurabella-admin.png";
 import dailyStarImg from "../Banner/odoo.png";
 import nadiaFurnitureImg from "../Banner/nadia-furniture.png";
+import taskManagerImg from "../Banner/Capture.PNG";
 
 export const ProjectList = [
+  {
+    title: "Task Manager SaaS",
+    featured: true,
+    subtitle: "Team productivity & workflow management",
+    category: "SaaS Product",
+    group: "SaaS",
+    img: taskManagerImg,
+    summary: "A focused workspace for teams to organize work, track progress, and keep daily delivery visible from one simple dashboard.",
+    highlights: [
+      "Designed a clear dashboard with status-based task views for new, in-progress, completed, and canceled work.",
+      "Built a streamlined task creation and tracking flow that keeps the most important actions easy to find.",
+      "Created a responsive admin experience with reusable UI patterns, lightweight navigation, and role-ready structure.",
+    ],
+    techStack: [DjangoRest, react, mysql, tailwind, html],
+    liveLink: "#",
+    gitLink: "#",
+  },
   {
     title: "Special Baby Shop BD",
     featured: true,

@@ -450,9 +450,13 @@ export default function Project() {
         >
           <div className="max-w-[620px]">
             <p className="section-kicker">Engineering projects</p>
+            <h2 className="section-title">Products built for real-world work</h2>
+            <p className="section-copy mt-3 max-w-[560px]">
+              A selection of ERP systems, commerce platforms, and focused SaaS products designed to make complex operations feel simple.
+            </p>
           </div>
 
-          <div className="flex gap-7">
+          <div className="flex gap-7 self-start lg:self-auto">
             <div>
               <p className=" text-[22px] font-bold tracking-tight text-slate-950" >
                 {ProjectList.length}
@@ -475,7 +479,7 @@ export default function Project() {
           </div>
         </div>
        
-        <div className=" mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <div className="mt-7 flex flex-col gap-4 rounded-2xl border border-slate-200 bg-slate-50/70 p-3.5 lg:flex-row lg:items-center lg:justify-between">
           <div className="project-filter-scroll flex gap-2 overflow-x-auto pb-1">
             {categories.map((category) => {
               const selected =
